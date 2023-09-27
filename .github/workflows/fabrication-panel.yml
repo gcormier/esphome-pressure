@@ -1,0 +1,11 @@
+name: "Fabrication - Panel"
+on:
+
+  workflow_dispatch:
+  workflow_call:
+
+jobs:
+  fabrication-panel:
+    uses: gcormier/kicad-jobs/.github/workflows/kicad-fabrication-panel.yaml@main
+    permissions:
+      contents: write
