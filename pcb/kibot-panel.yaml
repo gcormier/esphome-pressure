@@ -28,15 +28,14 @@ outputs:
       units: mm
       configs:
         - layout:
-            rows: 1
-            cols: 1
-            space: 0
+            rows: 2
+            cols: 2
+            space: 0mm
             #hbackbone: 5
             #vbackbone: 5
             #hboneskip: 1
             #vboneskip: 1
-          #page:
-            #size: A3
+            alternation: rows
           tabs:
             type: full
             #width: 3
@@ -51,20 +50,22 @@ outputs:
             #prolong: 0.5
           framing:
             type: railstb
-            width: 5
-            space: 3
+            width: 5mm
+            space: 3mm
             fillet: 1mm
+            mintotalheight: 70mm
+            mintotalwidth: 70mm
           tooling:
             type: 4hole
-            hoffset: 2.5
-            voffset: 2.5
-            size: 1.152
+            hoffset: 2.5mm
+            voffset: 2.5mm
+            size: 2mm
           fiducials:
             type: 4fid
-            hoffset: 5
-            voffset: 3.85
-            coppersize: 1
-            opening: 2
+            hoffset: 15mm
+            voffset: 3.85mm
+            coppersize: 1mm
+            opening: 2mm
           text:
             type: simple
             text: JLCJLCJLCJLC
