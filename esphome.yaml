@@ -1,0 +1,42 @@
+esp32:
+  board: esp32-c3-devkitm-1
+  framework:
+    type: esp-idf
+    version: recommended
+
+esphome:
+  name: pressure-sensor
+  platformio_options:
+    board_build.flash_mode: dio # If you don't specify this using esp-idf framework, the device will boot-loop.
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+captive_portal:
+
+# Enable logging
+logger:
+  # Use the ESP32-C3-MINI's native USB port for serial logging. Comment this out if you want to use the pin header.
+  # Seems buggy.
+  hardware_uart: USB_SERIAL_JTAG
+
+# Enable Home Assistant API
+api:
+
+ota:
+
+i2c:
+  sda: 6
+  scl: 7
+  scan: true
+  id: bus_a
+
+sensor:
+  - platform: xgzp68xx
+    temperature:
+      name: "press Temperature"
+    pressure:
+      name: "press diff pressure"
+    update_interval: 5s
+    
