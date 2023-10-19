@@ -1,7 +1,7 @@
 ### esphome status
 I've contributed the code to esphome ( https://github.com/esphome/esphome/pull/5562 ) for this sensor and it should hopefully be merged sometime in October/November.
 
-<img  src="images/render.png" />
+<img  src="images/render.png" width=60% />
 
 # esphome-pressure
 This is a custom device for reading differential pressure. The most useful example I can think of is monitoring your pressure
