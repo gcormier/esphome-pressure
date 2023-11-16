@@ -1,6 +1,3 @@
-### esphome status
-I've contributed the code to esphome ( https://github.com/esphome/esphome/pull/5562 ) for this sensor and it should hopefully be merged sometime in October/November.
-
 <img  src="images/render.png" width=60% />
 
 # esphome-pressure
