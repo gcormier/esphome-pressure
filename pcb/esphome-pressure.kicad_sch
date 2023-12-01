@@ -3473,7 +3473,7 @@
   )
 
   (symbol (lib_id "Connector_Generic:Conn_01x06") (at 259.08 106.68 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp no)
     (uuid 625ce5bf-9621-4fd0-b1e7-2627092e6f89)
     (property "Reference" "J3" (at 257.3528 93.345 0)
       (effects (font (size 1.27 1.27)))
@@ -4307,7 +4307,7 @@
   )
 
   (symbol (lib_id "Connector:Conn_01x04_Pin") (at 209.55 137.16 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp no)
     (uuid cc304edd-cae4-4f44-a004-a00ad9d936f5)
     (property "Reference" "J2" (at 209.55 133.35 0)
       (effects (font (size 1.27 1.27)))
