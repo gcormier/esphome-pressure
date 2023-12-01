@@ -28,3 +28,4 @@ fp-info-cache
 *.xml
 *.csv
 *.lck
+pcb/3DxService.log
