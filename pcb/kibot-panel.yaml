@@ -16,7 +16,7 @@ outputs:
             rows: 2
             cols: 2
             space: 0mm
-            #hbackbone: 5
+            hbackbone: 5mm
             #vbackbone: 5
             #hboneskip: 1
             #vboneskip: 1
