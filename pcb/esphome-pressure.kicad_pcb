@@ -3252,7 +3252,7 @@
   (gr_text "3V\n\nSCL\n\nSDA\n\nGND" (at 147.233631 89.751904) (layer "F.SilkS") (tstamp 9fa29ba1-fbaf-40a0-9ab8-7b5b18574c04)
     (effects (font (size 0.8 0.8) (thickness 0.12) bold) (justify right bottom))
   )
-  (gr_text "JLCJLCJLCJLC" (at 123.121806 39.264843) (layer "F.SilkS") (tstamp ae843a52-90d6-4f5c-9e48-8faa0c6683c5)
+  (gr_text "JLCJLCJLCJLC" (at 124.721806 87.764843) (layer "F.SilkS") (tstamp ae843a52-90d6-4f5c-9e48-8faa0c6683c5)
     (effects (font (size 1 1) (thickness 0.2)))
   )
   (gr_text "24VAC" (at 108.402535 45.264843) (layer "F.SilkS") (tstamp b8339b88-85d0-452a-a68e-6e16e9512644)
