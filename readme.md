@@ -49,3 +49,9 @@ sensor:
 7. Using some tubing, connect the ports to the pressure points you wish to measure. For example, you can connect one port after the air filter, and the other to the return air duct. You can then monitor the pressure drop across the filter.
 
 Note the sensor accuracy is +/- 2%. It is quite sensitive to pressure changes, so you may with to use other [esphome filters](https://esphome.io/components/sensor/index.html#sensor-filters) in order to smooth out the values.
+
+## Hose/tubing
+The following have been reported to work well. Sample Amazon search terms are provided. If you would like to contribute something you've found to work well, please let me know via pull request, GitHub issue, or email.
+
+1. 4mmOD, 2.5mmID polyurethane tubing. (eg. `Pneumatic Tubing - Polyurethane Air Compressor Hose Pipe, Apply to Air Line Transfer (4mm OD 2.5mm ID, 10Ft, Clear)`)
+2. 1/16"ID, 1/8" OD silicone tubing. (eg. `1/16" ID x 1/8" OD Pure Thin Silicone Tubing Food Grade Pure Silicon Tube High Temp Home Brewing Winemaking Silicone Hose Tubing, 26.25ft Length`)
