@@ -54,7 +54,7 @@ Note the sensor accuracy is +/- 2%. It is quite sensitive to pressure changes, s
 The following are based on feedback from users. If you would like to contribute something you've found to work well, please let me know via pull request, GitHub issue, or email.
 
 
-| Name | Sample Amazon Keywords | Comments |
+| Size/Material | Sample Amazon Keywords | Comments |
 |------|----------|----------|
 |2.5mm ID, 4mm OD polyurethane|Pneumatic Tubing - Polyurethane Air Compressor Hose Pipe, Apply to Air Line Transfer (4mm OD 2.5mm ID)|Works well, a bit stiff|
 |1/16" ID, 1/8" OD silicone|1/16" ID x 1/8" OD Pure Thin Silicone Tubing Food Grade Pure Silicon Tube High Temp Home Brewing Winemaking Silicone Hose Tubing, 26.25ft Length|Very tight fit, suggest other sizes|
