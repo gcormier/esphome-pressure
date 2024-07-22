@@ -34,6 +34,7 @@ i2c:
 
 sensor:
   - platform: xgzp68xx
+    k_value: 8192   # 8192 for +/- 0.5kPa sensor
     temperature:
       name: "press Temperature"
     pressure:
