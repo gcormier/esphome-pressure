@@ -15,24 +15,14 @@ outputs:
         - layout:
             rows: 2
             cols: 2
-            space: 0mm
-            hbackbone: 5mm
-            #vbackbone: 5
-            #hboneskip: 1
-            #vboneskip: 1
+            vspace: 6mm
+            rotation: 180deg
             alternation: rows
           tabs:
             type: full
-            #width: 3
-            #vcount: 2
-            #hcount: 0
           cuts:
             type: vcuts
             layer: Edge.Cuts
-            #drill: 0.5
-            #spacing: 1mm
-            #offset: 0.2
-            #prolong: 0.5
           framing:
             type: railstb
             width: 5mm
@@ -67,3 +57,4 @@ outputs:
             vjustify: center
           post:
             refillzones: true
+            millradius: 0.6mm
