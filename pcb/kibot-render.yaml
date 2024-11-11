@@ -19,7 +19,7 @@ outputs:
       output: "render-ISO.png"
       width: 1920   # default 1280x720, bump to 1920x1080
       zoom: 0
-      move_y: -1
+      move_y: -3
 
   - name: 'Rendering top'
     type: render_3d
