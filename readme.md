@@ -1,4 +1,4 @@
-<img  src="images/render.png" width=60% />
+<img  src="images/render-ISO.png" width=60% />
 
 # esphome-pressure
 This is a custom device for reading differential pressure. The most useful example I can think of is monitoring your pressure
