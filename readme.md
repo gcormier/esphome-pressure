@@ -13,7 +13,9 @@ Be careful when setting this up - I'm sure you can damage the sensor if you expo
 <a href="https://www.tindie.com/products/gcormier/esphome-pressure/"><img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-mediums.png" alt="I sell on Tindie" width="150" height="78"></a>
 
 ## Power Supply
-It can be powered by USC-C, or, by a wider range of input voltages on the screw terminals. It was designed for 24VAC, which is a common voltage used in HVAC systems. It can also work with a broader range of both AC and DC input voltages. The absolute maximum voltage for the switching regulator is 40VDC, which means up to around 28VAC. The minimum DC is approximately 9VDC.
+- USB-C
+- AC - 24VAC maximum. (common voltage used in HVAC system)
+- DC - 9-30VDC. A 12V or 24V DC wall wart should be fine.
 
 It has a 500mA polyfuse directly off the screw terminal inputs to protect your HVAC system. The USB-C port is unfused and should be protected by the upstream device.
 
