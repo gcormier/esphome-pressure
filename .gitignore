@@ -29,3 +29,4 @@ fp-info-cache
 *.csv
 *.lck
 pcb/3DxService.log
+secrets.yaml
