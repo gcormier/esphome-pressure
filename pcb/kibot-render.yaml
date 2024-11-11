@@ -18,5 +18,5 @@ outputs:
       transparent_background: true
       output: "render.png"
       width: 1920   # default 1280x720, bump to 1920x1080
-      zoom: 3
+      zoom: 5
       move_y: 1
