@@ -30,3 +30,4 @@ fp-info-cache
 *.lck
 pcb/3DxService.log
 secrets.yaml
+.esphome/*
