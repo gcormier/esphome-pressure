@@ -62,3 +62,7 @@ The following are based on feedback from users. If you would like to contribute 
 |1/16" ID, 1/8" OD silicone|1/16" ID x 1/8" OD Pure Thin Silicone Tubing Food Grade Pure Silicon Tube High Temp Home Brewing Winemaking Silicone Hose Tubing, 26.25ft Length|Very tight fit, suggest other sizes|
 |2mm ID, 4mm OD silicone|Pure Silicone Tubing, 2mm ID x 4mm OD High Temp Food Grade Tube Pure Silicone Hose Tube|Works well|
 |3mm ID, 5mm OD silicone| | Too loose! Do not use|
+
+## GPIO Breakout
+There are now GPIO's broken out on a 2.54mm (0.1") header. The i2c bus is also broken out.
+These are all 3.3V logic pins, and be careful not to source too much current from the power pins.
