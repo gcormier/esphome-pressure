@@ -4822,7 +4822,7 @@
 			)
 		)
 		(property "Value" "0.1u 25v"
-			(at -2.1 -43.17 0)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "472c8a22-370a-47f4-9487-4a50d6d8caec")
 			(effects
