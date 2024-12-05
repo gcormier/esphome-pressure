@@ -12835,7 +12835,7 @@
 			(justify right bottom)
 		)
 	)
-	(gr_text "JLCJLCJLCJLC"
+	(gr_text "JLCJLCJLCJLC1"
 		(at 124.721806 87.764843 0)
 		(layer "F.SilkS")
 		(uuid "ae843a52-90d6-4f5c-9e48-8faa0c6683c5")
