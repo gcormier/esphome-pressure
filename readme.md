@@ -1,6 +1,8 @@
 <img  src="images/render-ISO.png" width=60% />
 
 # esphome-pressure
+<a href="https://www.tindie.com/products/gcormier/esphome-pressure/"><img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-mediums.png" alt="I sell on Tindie" width="150" height="78"></a>
+
 This is a custom device for reading differential pressure. The most useful example I can think of is monitoring your pressure
 drop across your air filter. This is a great way to know when to change your filter.
 
@@ -8,9 +10,20 @@ It is based on an ESP32-C3-MINI, which has native USB-C for flashing.
 
 The pressure sensor part number will control the differential range that can be expected, as well as the accuracy (+/- 2%). I've chosen +/- 0.5kPa, which is about 2" of pressure drop. Most HVAC systems are designed to have a pressure drop of 0.1" (0.025kPa).
 
-Be careful when setting this up - I'm sure you can damage the sensor if you expose it to too much differential pressure.
 
-<a href="https://www.tindie.com/products/gcormier/esphome-pressure/"><img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-mediums.png" alt="I sell on Tindie" width="150" height="78"></a>
+## Temperature Sensors
+Version 3 (Dec 2024) is now available. It adds an additional pluggable header that will support Dallas 1-wire temperature sensors. The temperature sensor is optional, and the device will work without it. If you are using a Dallas DS18B20 sensor, I strongly recommend using Digikey, Mouser or Adafruit to avoid obtaining [counterfeit sensors](https://github.com/cpetrich/counterfeit_DS18B20/tree/master). Since these sensors use a 1-wire bus, and each have a unique ID, you can have as many sensors as you want using the single connection.
+
+You will need to find out your sensor ID's as per the [esphome documentation](https://esphome.io/components/one_wire#one-wire).
+
+
+
+## Damage
+Sensor specifications:
+
+- Up to 5X rated pressure is unlikely to cause issues
+- Between 5X-10X rated pressure, the sensor might gain a permanent 'offset'
+- Above 10X it is likely to burst and/or be permanently damaged
 
 ## Power Supply
 - USB-C
@@ -65,4 +78,4 @@ The following are based on feedback from users. If you would like to contribute 
 
 ## GPIO Breakout
 There are now GPIO's broken out on a 2.54mm (0.1") header. The i2c bus is also broken out.
-These are all 3.3V logic pins, and be careful not to source too much current from the power pins.
+These are all 3.3V logic pins, be careful not to source too much current from the power pins.

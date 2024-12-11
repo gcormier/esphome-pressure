@@ -4859,6 +4859,12 @@
 		(uuid "505339f8-69bc-4b8b-924b-2bcdcb137016")
 	)
 	(junction
+		(at 179.07 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "57eef8af-4f50-4981-9907-be3fa4449486")
+	)
+	(junction
 		(at 57.15 26.67)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5370,6 +5376,16 @@
 		)
 		(uuid "629f30e2-fef0-4f90-bd3e-ed9b815fc132")
 	)
+	(wire
+		(pts
+			(xy 172.72 105.41) (xy 179.07 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66fe4d02-5e9e-4638-870e-f5be0f3ce582")
+	)
 	(polyline
 		(pts
 			(xy 15.24 16.51) (xy 194.31 16.51)
@@ -5539,6 +5555,16 @@
 			(type default)
 		)
 		(uuid "8649b411-f63f-4402-b8a3-a98ab9cd1b8d")
+	)
+	(wire
+		(pts
+			(xy 179.07 96.52) (xy 179.07 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "87d56a25-1280-4ce4-8b9d-1f82f3ae736f")
 	)
 	(wire
 		(pts
@@ -5719,6 +5745,16 @@
 			(type default)
 		)
 		(uuid "a93c0453-7b53-49c6-a73d-b4c34e07b1bc")
+	)
+	(wire
+		(pts
+			(xy 172.72 97.79) (xy 172.72 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a982e0ee-9be5-4e14-91af-394f4ecea513")
 	)
 	(wire
 		(pts
@@ -5912,6 +5948,16 @@
 	)
 	(wire
 		(pts
+			(xy 172.72 96.52) (xy 179.07 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9a13e74-24a0-4856-a797-24a670fe906d")
+	)
+	(wire
+		(pts
 			(xy 142.24 29.21) (xy 144.78 29.21)
 		)
 		(stroke
@@ -6052,6 +6098,16 @@
 	)
 	(wire
 		(pts
+			(xy 172.72 102.87) (xy 172.72 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9f22932-6f19-4f9b-8bd4-1059eda84518")
+	)
+	(wire
+		(pts
 			(xy 47.625 34.29) (xy 47.625 27.94)
 		)
 		(stroke
@@ -6072,7 +6128,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 102.87) (xy 179.07 101.6)
+			(xy 179.07 109.22) (xy 179.07 107.95)
 		)
 		(stroke
 			(width 0)
@@ -6105,8 +6161,8 @@
 		(uuid a60e18a9-bb62-4793-aa59-53adf3b55f1b)
 	)
 	(rectangle
-		(start 166.37 88.9)
-		(end 190.5 110.49)
+		(start 161.29 88.9)
+		(end 190.5 115.57)
 		(stroke
 			(width 0)
 			(type default)
@@ -6471,7 +6527,7 @@
 	)
 	(global_label "PROBE_BUS"
 		(shape input)
-		(at 179.07 99.06 180)
+		(at 172.72 105.41 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6481,7 +6537,7 @@
 		)
 		(uuid "1aaa0332-5010-46df-b116-c164afa8de32")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 168.0054 99.06 0)
+			(at 161.6554 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6996,6 +7052,85 @@
 			(project "esphome-pressure"
 				(path "/ac4e4760-4dbb-40a3-a395-65d3f7cc73da"
 					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 172.72 100.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "11fa937a-2a31-41a8-a366-2a54e2f5330d")
+		(property "Reference" "R9"
+			(at 174.2186 99.1616 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "5k1"
+			(at 174.2186 101.473 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 172.72 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 172.72 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 172.72 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25905"
+			(at 172.72 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "56b5ad1f-7847-4ece-bd24-887190742c8c")
+		)
+		(pin "2"
+			(uuid "25a75e4d-c79e-4ad5-bc4e-84fb378c9f35")
+		)
+		(instances
+			(project "esphome-pressure"
+				(path "/ac4e4760-4dbb-40a3-a395-65d3f7cc73da"
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -12304,7 +12439,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 179.07 102.87 0)
+		(at 179.07 109.22 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12312,7 +12447,7 @@
 		(dnp no)
 		(uuid "ec21c99a-8e98-4522-98c8-0080009bcbaf")
 		(property "Reference" "#PWR06"
-			(at 179.07 109.22 0)
+			(at 179.07 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12321,7 +12456,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 179.197 107.2642 0)
+			(at 179.197 113.6142 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12329,7 +12464,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 179.07 102.87 0)
+			(at 179.07 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12338,7 +12473,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 179.07 102.87 0)
+			(at 179.07 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12347,7 +12482,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 179.07 102.87 0)
+			(at 179.07 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12733,7 +12868,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Screw_Terminal_01x03")
-		(at 184.15 99.06 0)
+		(at 184.15 105.41 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12742,7 +12877,7 @@
 		(fields_autoplaced yes)
 		(uuid "ff71c677-a054-4563-9409-c08c80bf9928")
 		(property "Reference" "J5"
-			(at 186.69 97.7899 0)
+			(at 186.69 104.1399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12751,7 +12886,7 @@
 			)
 		)
 		(property "Value" "T1"
-			(at 186.69 100.3299 0)
+			(at 186.69 106.6799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12760,7 +12895,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Phoenix_MC:PhoenixContact_MC_1,5_3-G-3.81_1x03_P3.81mm_Horizontal"
-			(at 184.15 99.06 0)
+			(at 184.15 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12769,7 +12904,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 184.15 99.06 0)
+			(at 184.15 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12778,7 +12913,7 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 184.15 99.06 0)
+			(at 184.15 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12787,7 +12922,7 @@
 			)
 		)
 		(property "LCSC" "C8406"
-			(at 184.15 99.06 0)
+			(at 184.15 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12796,7 +12931,7 @@
 			)
 		)
 		(property "Notes" "3.81mm pitch Phoenix MC or clone"
-			(at 184.15 99.06 0)
+			(at 184.15 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12805,7 +12940,7 @@
 			)
 		)
 		(property "LCSC Alt" "C5188158"
-			(at 184.15 99.06 0)
+			(at 184.15 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
