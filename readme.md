@@ -35,8 +35,6 @@ It has a 500mA polyfuse directly off the screw terminal inputs to protect your H
 ## Flashing / Programming
 The USB-C port can be used to program. The first time, the reset button must be held. After this, all subsequent programming does not require access to the button.
 
-There is also a header for the typical serial flashing with GPIO0(9) and EN exposed. It follows my [eflashy32](https://github.com/gcormier/eflashy32) pinout.
-
 ## Enclosure
 The PCB will fit inside a [Hammond 1593KBK](https://www.hammfg.com/part/1593KBK) case. You can either cut (CNC) or 3D-print the faceplates. You can superglue some magnets in the case to have it stick to your HVAC system.
 
