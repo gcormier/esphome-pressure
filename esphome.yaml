@@ -41,3 +41,14 @@ sensor:
       name: "press diff pressure"
     update_interval: 5s
     
+
+##  Below is needed if you are using a DS18B20 temperature sensor. Otherwise, you can remove
+  # How to find your sensor ID
+  # https://esphome.io/components/one_wire#one-wire
+  - platform: dallas_temp
+    address: 0x9f00000e4a42eb28 # You ned to put your sensor ID in here
+    name: "mysensor"
+
+one_wire:
+  - platform: gpio
+    pin: GPIO10
