@@ -77,3 +77,9 @@ The following are based on feedback from users. If you would like to contribute 
 ## GPIO Breakout
 There are now GPIO's broken out on a 2.54mm (0.1") header. The i2c bus is also broken out.
 These are all 3.3V logic pins, be careful not to source too much current from the power pins.
+
+## Absolute pressure
+If you want to change the sensor to an absolute pressure sensor, the XGZP6887D appears to be footprint compatible. The code should also work, but 
+you will need to set your K value according to the datasheet.
+
+Please see https://github.com/gcormier/esphome-pressure/discussions/12 for more discussion and leave a comment if you are using it successfully.
