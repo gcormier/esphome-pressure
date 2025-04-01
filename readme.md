@@ -36,7 +36,7 @@ It has a 500mA polyfuse directly off the screw terminal inputs to protect your H
 The USB-C port can be used to program. The first time, the reset button must be held. After this, all subsequent programming does not require access to the button.
 
 ## Enclosure
-The PCB will fit inside a [Hammond 1593KBK](https://www.hammfg.com/part/1593KBK) case. You can either cut (CNC) or 3D-print the faceplates. You can superglue some magnets in the case to have it stick to your HVAC system.
+The PCB will fit inside a [Hammond 1593KBK](https://www.hammfg.com/part/1593KBK) or a [Bud Industries HP-3650-B](https://www.budind.com/product/general-use-boxes/hand-held-plastic-box-style-2/hp-3650-b/#group=series-products&external_dimensions_group=0&internal_dimensions=0) case. Both are available from Mouser, Digikey and elsewhere. You can either cut (CNC), fab (PCB) or 3D-print the faceplates. You can superglue some magnets in the case to have it stick to your HVAC system.
 
 ### Setup guide
 1. While holding the button, plug in the USB-C cable to your computer. This will put the device into programming mode. Holding the button
