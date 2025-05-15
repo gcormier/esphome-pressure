@@ -67,7 +67,7 @@ outputs:
     type: compress
     dir: ./
     options:
-      output: serialsentinel-gerbers.zip
+      output: '%f-gerbers.zip'
       files:
         - from_output: JLCPCB_gerbers
           dest: /
