@@ -133,14 +133,14 @@
 	(footprint "Mounting_Wuerth:Mounting_Wuerth_WA-SMSI-M2.5_H2.5mm_9774025151R"
 		(layer "F.Cu")
 		(uuid "01d73085-cc40-4c81-bced-ff42611077ed")
-		(at 106.5 82.2)
+		(at 103.904127 82.2)
 		(descr "Mounting Hardware, inside through hole M2.5, height 2.5, Wuerth electronics 9774025151R (https://www.we-online.com/components/products/datasheet/9774025151R.pdf), generated with kicad-footprint-generator")
 		(tags "Mounting M2.5 9774025151R")
 		(property "Reference" "H3"
 			(at 0 -3.95 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "cb920714-5337-4e2d-ac0b-4414fc7af17a")
+			(uuid "38195e22-0e15-44fc-a7cc-e276ccd9cc9e")
 			(effects
 				(font
 					(size 1 1)
@@ -151,7 +151,7 @@
 		(property "Value" "SMSI-M2_H4mm_9774040243"
 			(at 0 3.95 0)
 			(layer "F.Fab")
-			(uuid "9ac6fafe-33a4-4257-96f1-6b2e9321270e")
+			(uuid "b7d131af-0db7-4fce-b10d-4dd5278f328f")
 			(effects
 				(font
 					(size 1 1)
@@ -163,7 +163,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "9668e659-87ff-4c82-b3f9-2a184d3d1c15")
+			(uuid "6561b4ad-09e6-4921-ad18-e633741d9138")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -175,7 +175,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f5c359b7-d173-476e-be2f-4fbdd488c80c")
+			(uuid "4330d227-0785-4668-87b9-4a75f77828ce")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -592,13 +592,13 @@
 			(at 0 -2.425)
 			(size 0.642 0.642)
 			(layers "F.Cu")
-			(uuid "4dab00bd-7720-4058-a9bf-02bff80ef6ac")
+			(uuid "911afe74-9e4c-4f10-9173-4015c7c19fe2")
 		)
 		(pad "1" smd circle
 			(at 0 2.425)
 			(size 0.642 0.642)
 			(layers "F.Cu")
-			(uuid "4dab00bd-7720-4058-a9bf-02bff80ef6ac")
+			(uuid "a5e43e99-478f-4d6e-a483-c6eb18f5b72b")
 		)
 		(pad "1" smd custom
 			(at 2.425 0)
@@ -616,7 +616,7 @@
 					(fill no)
 				)
 			)
-			(uuid "4dab00bd-7720-4058-a9bf-02bff80ef6ac")
+			(uuid "0c54c788-2814-4b2e-97bd-b34fe77dc877")
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Mounting_Wuerth.3dshapes/Mounting_Wuerth_WA-SMSI-M2.5_H2.5mm_9774025151R.wrl"
@@ -634,14 +634,14 @@
 	(footprint "Mounting_Wuerth:Mounting_Wuerth_WA-SMSI-M2.5_H2.5mm_9774025151R"
 		(layer "F.Cu")
 		(uuid "253279e4-fc54-40f9-bb46-552c9a21034b")
-		(at 106.5 70.2)
+		(at 103.904127 70.2)
 		(descr "Mounting Hardware, inside through hole M2.5, height 2.5, Wuerth electronics 9774025151R (https://www.we-online.com/components/products/datasheet/9774025151R.pdf), generated with kicad-footprint-generator")
 		(tags "Mounting M2.5 9774025151R")
 		(property "Reference" "H1"
 			(at 0 -3.95 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "3a536496-e306-4d51-b97e-1a007d9b5612")
+			(uuid "c5a45122-351d-4a0a-a8e8-eb3c12d33238")
 			(effects
 				(font
 					(size 1 1)
@@ -652,7 +652,7 @@
 		(property "Value" "SMSI-M2_H4mm_9774040243"
 			(at 0 3.95 0)
 			(layer "F.Fab")
-			(uuid "d68f3031-6323-402f-9d12-70bd86105037")
+			(uuid "438c177a-a8ac-44bc-be24-36d39366344a")
 			(effects
 				(font
 					(size 1 1)
@@ -664,7 +664,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "6f7a74b2-9c4e-4e76-9bbc-1277a6444227")
+			(uuid "ff924f1a-e5c0-4f2b-83f8-1bdefdc2bfc1")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -676,7 +676,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "e666b965-ebab-4614-9b13-05eadefd01d1")
+			(uuid "71a29b81-8582-4dfc-9075-6b974e02ec0d")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1093,13 +1093,13 @@
 			(at 0 -2.425)
 			(size 0.642 0.642)
 			(layers "F.Cu")
-			(uuid "18919065-87a2-4268-9a64-22a978573ab7")
+			(uuid "6f03d56a-20c0-4361-97fc-160dd6bdf709")
 		)
 		(pad "1" smd circle
 			(at 0 2.425)
 			(size 0.642 0.642)
 			(layers "F.Cu")
-			(uuid "18919065-87a2-4268-9a64-22a978573ab7")
+			(uuid "5070d241-1e67-41b2-8be8-c2107c085b65")
 		)
 		(pad "1" smd custom
 			(at 2.425 0)
@@ -1117,7 +1117,7 @@
 					(fill no)
 				)
 			)
-			(uuid "18919065-87a2-4268-9a64-22a978573ab7")
+			(uuid "402b3893-9388-4304-be86-2de08e5b693c")
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Mounting_Wuerth.3dshapes/Mounting_Wuerth_WA-SMSI-M2.5_H2.5mm_9774025151R.wrl"
@@ -1141,7 +1141,7 @@
 		(property "Reference" "J2"
 			(at -6.2 0 180)
 			(layer "F.SilkS")
-			(uuid "bdf5198d-be88-4bc5-adcc-685431104a83")
+			(uuid "b4c90914-fc88-4adb-b720-1f3edd0ec70e")
 			(effects
 				(font
 					(size 1 1)
@@ -1152,7 +1152,7 @@
 		(property "Value" "HCTL HC-SFP-20P"
 			(at 2.1 0 270)
 			(layer "F.Fab")
-			(uuid "0d3d2ef3-7922-4a7f-a9f3-dde9d6d4d06b")
+			(uuid "f5c5fe75-d89f-4a62-a5e8-5c8ac988f2d4")
 			(effects
 				(font
 					(size 1 1)
@@ -1165,7 +1165,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "04d5c25d-5e62-4fb4-8d6f-cd5390157756")
+			(uuid "5617989a-e57a-4c02-b7a7-9b23d6186c6a")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1178,7 +1178,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "9e744146-517e-496a-9da5-b836165c349f")
+			(uuid "3dce8f54-7cb7-4e63-87cf-f867cc62e043")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1936,14 +1936,14 @@
 	(footprint "Mounting_Wuerth:Mounting_Wuerth_WA-SMSI-M2.5_H2.5mm_9774025151R"
 		(layer "F.Cu")
 		(uuid "c90d15f9-4c09-4d10-b743-154ffdc017c0")
-		(at 89.425 76.2)
+		(at 86.829127 76.2)
 		(descr "Mounting Hardware, inside through hole M2.5, height 2.5, Wuerth electronics 9774025151R (https://www.we-online.com/components/products/datasheet/9774025151R.pdf), generated with kicad-footprint-generator")
 		(tags "Mounting M2.5 9774025151R")
 		(property "Reference" "H2"
 			(at 0 -3.95 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "18700958-083c-4377-856d-04aef50a0404")
+			(uuid "4da6baf4-2145-4461-b201-5d8ebd09b5e4")
 			(effects
 				(font
 					(size 1 1)
@@ -1954,7 +1954,7 @@
 		(property "Value" "SMSI-M2_H4mm_9774040243"
 			(at 0 3.95 0)
 			(layer "F.Fab")
-			(uuid "c339cc49-9f09-4042-8c2c-6094bc444a44")
+			(uuid "69f598c6-5390-4f06-8f87-e9a2b64ad08f")
 			(effects
 				(font
 					(size 1 1)
@@ -1966,7 +1966,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f846e193-0947-44d9-9e9a-461971193e75")
+			(uuid "350a5600-f98f-49d9-9b57-9d9a8f11c0f9")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1978,7 +1978,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "51666774-9f25-4d64-a2e2-e44c1cd5e5ea")
+			(uuid "77141dcd-1b43-4ab1-abaa-4ac6df19fe01")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2395,13 +2395,13 @@
 			(at 0 -2.425)
 			(size 0.642 0.642)
 			(layers "F.Cu")
-			(uuid "9dd79699-eef6-49ad-97ea-8c57712bf00a")
+			(uuid "f419cd74-5901-4626-aecd-05b56ef04fd5")
 		)
 		(pad "1" smd circle
 			(at 0 2.425)
 			(size 0.642 0.642)
 			(layers "F.Cu")
-			(uuid "9dd79699-eef6-49ad-97ea-8c57712bf00a")
+			(uuid "cedf97d6-5152-4f50-9a07-ba48cc0a5da4")
 		)
 		(pad "1" smd custom
 			(at 2.425 0)
@@ -2419,7 +2419,7 @@
 					(fill no)
 				)
 			)
-			(uuid "9dd79699-eef6-49ad-97ea-8c57712bf00a")
+			(uuid "ec12883b-8ff5-42f0-b76c-aee1c625aded")
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Mounting_Wuerth.3dshapes/Mounting_Wuerth_WA-SMSI-M2.5_H2.5mm_9774025151R.wrl"
@@ -2435,16 +2435,6 @@
 		)
 	)
 	(gr_line
-		(start 108.5 65.2)
-		(end 108.5 84.2)
-		(stroke
-			(width 0.15)
-			(type default)
-		)
-		(layer "F.SilkS")
-		(uuid "3e4d1796-8f01-45c1-b742-ee0913db4ae2")
-	)
-	(gr_line
 		(start 88.5 65.2)
 		(end 88.5 87.2)
 		(stroke
@@ -2455,8 +2445,8 @@
 		(uuid "3f5f1cdd-75ad-4b3e-bd49-33e928f03f12")
 	)
 	(gr_line
-		(start 107.5 74.2)
-		(end 107.5 78.2)
+		(start 105 74.2)
+		(end 105 78.2)
 		(stroke
 			(width 0.15)
 			(type default)
@@ -2475,14 +2465,24 @@
 		(uuid "7a274369-5b63-4554-a314-751034bf5965")
 	)
 	(gr_line
-		(start 108.5 74.2)
-		(end 108.5 78.2)
+		(start 106 74.2)
+		(end 106 78.2)
 		(stroke
 			(width 0.15)
 			(type default)
 		)
 		(layer "F.SilkS")
 		(uuid "97713be1-255e-4c11-b4bf-f99db1590ae7")
+	)
+	(gr_line
+		(start 107 74.2)
+		(end 107 78.2)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "99058d66-a325-48ae-8874-146b83475c98")
 	)
 	(gr_line
 		(start 89.5 65.2)
@@ -2495,24 +2495,14 @@
 		(uuid "9b31ca3e-d3a2-4696-a175-d6189a38f6da")
 	)
 	(gr_line
-		(start 106.5 74.2)
-		(end 106.5 78.2)
+		(start 104 74.2)
+		(end 104 78.2)
 		(stroke
 			(width 0.15)
 			(type default)
 		)
 		(layer "F.SilkS")
 		(uuid "acdcc8a2-15c3-41c2-8add-4f51f4432322")
-	)
-	(gr_line
-		(start 109.5 65.2)
-		(end 109.5 87.2)
-		(stroke
-			(width 0.15)
-			(type default)
-		)
-		(layer "F.SilkS")
-		(uuid "e0c4c2c2-da91-47e1-8026-1149f101e205")
 	)
 	(gr_line
 		(start 87.5 65.2)
@@ -2525,8 +2515,18 @@
 		(uuid "ea6f9adc-e39d-4e96-97a9-5784e9e57b2d")
 	)
 	(gr_line
-		(start 86.5 86.2)
-		(end 109 86.2)
+		(start 108 74.2)
+		(end 108 78.2)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "fc42cefe-8969-43db-b926-f940c77c0d61")
+	)
+	(gr_line
+		(start 84 86.2)
+		(end 106.5 86.2)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -2535,8 +2535,8 @@
 		(uuid "023f64a2-262e-4791-a9bb-54a178817927")
 	)
 	(gr_line
-		(start 109 66.2)
-		(end 86.5 66.2)
+		(start 106.5 66.2)
+		(end 84 66.2)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -2545,8 +2545,8 @@
 		(uuid "086c4b3b-4a73-45f6-95d0-3a595dbb2443")
 	)
 	(gr_line
-		(start 86.5 81.8)
-		(end 86.5 86.2)
+		(start 84 81.8)
+		(end 84 86.2)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -2555,9 +2555,9 @@
 		(uuid "4aa47e9f-d7d4-49f4-8acb-b198c481df96")
 	)
 	(gr_arc
-		(start 85.5 80.8)
-		(mid 86.207107 81.092893)
-		(end 86.5 81.8)
+		(start 83 80.8)
+		(mid 83.707107 81.092893)
+		(end 84 81.8)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -2566,9 +2566,9 @@
 		(uuid "701abb90-533d-4658-9d79-14ddf6362556")
 	)
 	(gr_arc
-		(start 86.5 70.6)
-		(mid 86.207107 71.307107)
-		(end 85.5 71.6)
+		(start 84 70.6)
+		(mid 83.707107 71.307107)
+		(end 83 71.6)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -2577,8 +2577,8 @@
 		(uuid "823d3f0a-79b0-4061-af5a-83c59790f3d7")
 	)
 	(gr_line
-		(start 86.5 70.6)
-		(end 86.5 66.2)
+		(start 84 70.6)
+		(end 84 66.2)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -2587,8 +2587,8 @@
 		(uuid "b004bf8c-2d19-4a77-9360-0ae0b9089b56")
 	)
 	(gr_line
-		(start 85 71.6)
-		(end 85.5 71.6)
+		(start 82.5 71.6)
+		(end 83 71.6)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -2597,8 +2597,8 @@
 		(uuid "c7984553-947f-4458-94a8-45b6a2728fbe")
 	)
 	(gr_line
-		(start 85 80.8)
-		(end 85.5 80.8)
+		(start 82.5 80.8)
+		(end 83 80.8)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -2607,8 +2607,8 @@
 		(uuid "e11e198c-0c81-4019-bd85-6b681f904662")
 	)
 	(gr_line
-		(start 109 86.2)
-		(end 109 66.2)
+		(start 106.5 86.2)
+		(end 106.5 66.2)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -2618,7 +2618,7 @@
 	)
 	(gr_rect
 		(start 61 64.7)
-		(end 110 87.7)
+		(end 109 87.7)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -2628,7 +2628,7 @@
 		(uuid "04ae13c8-38ec-4606-9f65-d8feecabe509")
 	)
 	(gr_text "JLCJLCJLCJLC"
-		(at 93 74.7 0)
+		(at 93 76.75 0)
 		(layer "F.SilkS")
 		(uuid "9d336b3a-2191-4eb9-aecf-fd4d35006783")
 		(effects
@@ -2651,7 +2651,7 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "test v1"
+	(gr_text "test v2"
 		(at 77.5 67.2 0)
 		(layer "F.SilkS")
 		(uuid "dffb460c-a379-43c6-b320-6db8ce474989")
