@@ -14,7 +14,7 @@ outputs:
       configs:
         - layout:
             rows: 2
-            cols: 2
+            cols: 3
             vspace: 6mm
             rotation: 180deg
             alternation: rows
