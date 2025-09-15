@@ -21,6 +21,7 @@ logger:
   # Seems buggy.
   hardware_uart: USB_SERIAL_JTAG
 
+
 # Enable Home Assistant API
 api:
 

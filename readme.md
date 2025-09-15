@@ -1,7 +1,7 @@
 <img  src="images/render-ISO.png" width=60% />
 
 # esphome-pressure
-<a href="https://www.tindie.com/products/gcormier/esphome-pressure/"><img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-mediums.png" alt="I sell on Tindie" width="150" height="78"></a>
+Purchase via <a href="https://tinkertown.ca/products/esphome-pressure">my online store</a>.
 
 This is a custom device for reading differential pressure. The most useful example I can think of is monitoring your pressure
 drop across your air filter. This is a great way to know when to change your filter.
