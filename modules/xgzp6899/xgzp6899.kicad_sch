@@ -1174,7 +1174,7 @@
 			(uuid "2d83a695-3e0a-4964-b3c4-423355d399a2")
 		)
 		(instances
-			(project "sensor_module"
+			(project "xgzp6899"
 				(path "/7e71481c-d42b-4efe-a14b-0ecbd3e61cce"
 					(reference "#PWR06")
 					(unit 1)
@@ -1237,7 +1237,7 @@
 			)
 		)
 		(instances
-			(project "sensor_module"
+			(project "xgzp6899"
 				(path "/7e71481c-d42b-4efe-a14b-0ecbd3e61cce"
 					(reference "H2")
 					(unit 1)
@@ -1366,7 +1366,7 @@
 			)
 		)
 		(instances
-			(project "sensor_module"
+			(project "xgzp6899"
 				(path "/7e71481c-d42b-4efe-a14b-0ecbd3e61cce"
 					(reference "H3")
 					(unit 1)
@@ -1432,7 +1432,7 @@
 			(uuid "630174bc-e899-41ec-b987-17fefbe8b14e")
 		)
 		(instances
-			(project "sensor_module"
+			(project "xgzp6899"
 				(path "/7e71481c-d42b-4efe-a14b-0ecbd3e61cce"
 					(reference "#PWR04")
 					(unit 1)
@@ -1564,7 +1564,7 @@
 			(uuid "cb0643fa-7957-4ea9-ac98-221a99b13407")
 		)
 		(instances
-			(project "sensor_module"
+			(project "xgzp6899"
 				(path "/7e71481c-d42b-4efe-a14b-0ecbd3e61cce"
 					(reference "#PWR03")
 					(unit 1)
@@ -1845,7 +1845,7 @@
 			(uuid "f11439e7-6359-4ca6-a9ee-9f66286b4203")
 		)
 		(instances
-			(project "sensor_module"
+			(project "xgzp6899"
 				(path "/7e71481c-d42b-4efe-a14b-0ecbd3e61cce"
 					(reference "#PWR05")
 					(unit 1)
@@ -1924,7 +1924,7 @@
 			)
 		)
 		(instances
-			(project "sensor_module"
+			(project "xgzp6899"
 				(path "/7e71481c-d42b-4efe-a14b-0ecbd3e61cce"
 					(reference "H1")
 					(unit 1)
