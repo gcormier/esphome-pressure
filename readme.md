@@ -1,6 +1,6 @@
 # sensor_module
 
-Plug-in sensor modules on an SFP connector, plus the carriers that accept them.
+Plug-in sensor modules on an SFP connector (I²C, SPI and UART), plus the carriers that accept them.
 The electrical and mechanical contract is in [interface/INTERFACE.md](interface/INTERFACE.md).
 
 ```
