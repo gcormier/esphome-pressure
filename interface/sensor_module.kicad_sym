@@ -20,7 +20,7 @@
 			)
 		)
 		(property "Value" "SensorModule"
-			(at -15.24 -24.13 0)
+			(at -15.24 -15.24 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -31,7 +31,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 0 -26.67 0)
+			(at 0 -17.78 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -52,7 +52,7 @@
 				)
 			)
 		)
-		(property "Description" "Sensor module interface (interface-v1): I2C, SPI, UART on an SFP 20-pin edge connector. Signals named from the carrier side: Carrier = controller (C), module = peripheral (P); C2P = carrier to module, P2C = module to carrier. Footprint sensor_module:SFP_Plug on modules, sensor_module:SFP+ on carriers."
+		(property "Description" "Sensor module interface (interface-v1): I2C, SPI, UART on an SFP 20-pin edge connector. Carrier = controller (C), module = peripheral (P); C2P = carrier to module, P2C = module to carrier. Footprint sensor_module:SFP_Plug on modules, sensor_module:SFP+ on carriers."
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -88,7 +88,7 @@
 		(symbol "SensorModule_0_1"
 			(rectangle
 				(start -15.24 15.24)
-				(end 15.24 -17.78)
+				(end 15.24 -10.16)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -100,7 +100,7 @@
 		)
 		(symbol "SensorModule_1_1"
 			(pin passive line
-				(at -17.78 12.7 0)
+				(at 0 17.78 270)
 				(length 2.54)
 				(name "VDD"
 					(effects
@@ -118,8 +118,9 @@
 				)
 			)
 			(pin passive line
-				(at -17.78 10.16 0)
+				(at 0 17.78 270)
 				(length 2.54)
+				(hide yes)
 				(name "VDD"
 					(effects
 						(font
@@ -135,8 +136,121 @@
 					)
 				)
 			)
+			(pin passive line
+				(at 0 -12.7 90)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -12.7 90)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -12.7 90)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -12.7 90)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -12.7 90)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "17"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -12.7 90)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "20"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin bidirectional line
-				(at -17.78 5.08 0)
+				(at -17.78 12.7 0)
 				(length 2.54)
 				(name "SDA"
 					(effects
@@ -154,7 +268,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -17.78 2.54 0)
+				(at -17.78 10.16 0)
 				(length 2.54)
 				(name "SCL"
 					(effects
@@ -172,7 +286,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -17.78 -2.54 0)
+				(at -17.78 5.08 0)
 				(length 2.54)
 				(name "SPI_SCK"
 					(effects
@@ -190,7 +304,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -17.78 -5.08 0)
+				(at -17.78 2.54 0)
 				(length 2.54)
 				(name "SPI_COPI"
 					(effects
@@ -208,7 +322,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -17.78 -7.62 0)
+				(at -17.78 0 0)
 				(length 2.54)
 				(name "SPI_CIPO"
 					(effects
@@ -226,7 +340,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -17.78 -10.16 0)
+				(at -17.78 -2.54 0)
 				(length 2.54)
 				(name "~{SPI_CS}"
 					(effects
@@ -344,114 +458,6 @@
 					)
 				)
 				(number "13"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -6.35 -20.32 90)
-				(length 2.54)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -3.81 -20.32 90)
-				(length 2.54)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "10"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -1.27 -20.32 90)
-				(length 2.54)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "11"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 1.27 -20.32 90)
-				(length 2.54)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "14"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 3.81 -20.32 90)
-				(length 2.54)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "17"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 6.35 -20.32 90)
-				(length 2.54)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "20"
 					(effects
 						(font
 							(size 1.27 1.27)

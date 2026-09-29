@@ -1034,7 +1034,7 @@
 				)
 			)
 			(property "Value" "SensorModule"
-				(at -15.24 -24.13 0)
+				(at -15.24 -15.24 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -1045,7 +1045,7 @@
 				)
 			)
 			(property "Footprint" ""
-				(at 0 -26.67 0)
+				(at 0 -17.78 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -1066,7 +1066,7 @@
 					)
 				)
 			)
-			(property "Description" "Sensor module interface (interface-v1): I2C, SPI, UART on an SFP 20-pin edge connector. Signals named from the carrier side: Carrier = controller (C), module = peripheral (P); C2P = carrier to module, P2C = module to carrier. Footprint sensor_module:SFP_Plug on modules, sensor_module:SFP+ on carriers."
+			(property "Description" "Sensor module interface (interface-v1): I2C, SPI, UART on an SFP 20-pin edge connector. Carrier = controller (C), module = peripheral (P); C2P = carrier to module, P2C = module to carrier. Footprint sensor_module:SFP_Plug on modules, sensor_module:SFP+ on carriers."
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1102,7 +1102,7 @@
 			(symbol "SensorModule_0_1"
 				(rectangle
 					(start -15.24 15.24)
-					(end 15.24 -17.78)
+					(end 15.24 -10.16)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -1114,7 +1114,7 @@
 			)
 			(symbol "SensorModule_1_1"
 				(pin passive line
-					(at -17.78 12.7 0)
+					(at 0 17.78 270)
 					(length 2.54)
 					(name "VDD"
 						(effects
@@ -1132,8 +1132,9 @@
 					)
 				)
 				(pin passive line
-					(at -17.78 10.16 0)
+					(at 0 17.78 270)
 					(length 2.54)
+					(hide yes)
 					(name "VDD"
 						(effects
 							(font
@@ -1149,8 +1150,121 @@
 						)
 					)
 				)
+				(pin passive line
+					(at 0 -12.7 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -12.7 90)
+					(length 2.54)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -12.7 90)
+					(length 2.54)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -12.7 90)
+					(length 2.54)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -12.7 90)
+					(length 2.54)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -12.7 90)
+					(length 2.54)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin bidirectional line
-					(at -17.78 5.08 0)
+					(at -17.78 12.7 0)
 					(length 2.54)
 					(name "SDA"
 						(effects
@@ -1168,7 +1282,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -17.78 2.54 0)
+					(at -17.78 10.16 0)
 					(length 2.54)
 					(name "SCL"
 						(effects
@@ -1186,7 +1300,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -17.78 -2.54 0)
+					(at -17.78 5.08 0)
 					(length 2.54)
 					(name "SPI_SCK"
 						(effects
@@ -1204,7 +1318,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -17.78 -5.08 0)
+					(at -17.78 2.54 0)
 					(length 2.54)
 					(name "SPI_COPI"
 						(effects
@@ -1222,7 +1336,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -17.78 -7.62 0)
+					(at -17.78 0 0)
 					(length 2.54)
 					(name "SPI_CIPO"
 						(effects
@@ -1240,7 +1354,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -17.78 -10.16 0)
+					(at -17.78 -2.54 0)
 					(length 2.54)
 					(name "~{SPI_CS}"
 						(effects
@@ -1358,114 +1472,6 @@
 						)
 					)
 					(number "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -6.35 -20.32 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -3.81 -20.32 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -1.27 -20.32 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 1.27 -20.32 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 -20.32 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "17"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 6.35 -20.32 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "20"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2399,14 +2405,14 @@
 	)
 	(text "SensorModule interface\nC = controller = carrier\nP = peripheral = module\nNot on board/BOM yet"
 		(exclude_from_sim no)
-		(at 162.56 36.83 0)
+		(at 162.56 34.29 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "d34647ef-0317-4f23-bdb9-aa6bc4d697c1")
+		(uuid "9eb4ac53-3767-4f57-b31e-238fd150ff9d")
 	)
 	(symbol
 		(lib_id "sensor_module:SensorModule")
@@ -2416,7 +2422,7 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "655472cb-3124-4d3c-9b1e-0f75b906f785")
+		(uuid "77fdc513-ba79-402c-bd30-1bc33d12a57c")
 		(property "Reference" "J2"
 			(at 162.56 40.64 0)
 			(show_name no)
@@ -2429,7 +2435,7 @@
 			)
 		)
 		(property "Value" "SensorModule"
-			(at 162.56 81.28 0)
+			(at 162.56 72.39 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2440,7 +2446,7 @@
 			)
 		)
 		(property "Footprint" "sensor_module:SFP_Plug"
-			(at 177.8 83.82 0)
+			(at 177.8 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2473,64 +2479,64 @@
 			)
 		)
 		(pin "1"
-			(uuid "c042392d-b7c3-401e-ab44-1290abae59e1")
+			(uuid "fb4b5914-69a7-4517-abe3-4ac01d41b34d")
 		)
 		(pin "2"
-			(uuid "79c35362-4c87-43d4-a36a-445a233d1d4d")
+			(uuid "0154aa3f-0418-4449-9294-aea4794251b3")
 		)
 		(pin "3"
-			(uuid "681a6d6a-7c04-49f3-b82e-c0c197294026")
+			(uuid "a5cda55e-2d5a-4368-a87c-11305368a8ac")
 		)
 		(pin "4"
-			(uuid "f3c1e124-30f6-431f-b54d-2fd3d31c0833")
+			(uuid "8771676e-c63c-4a3e-abc2-379e5ea6cffa")
 		)
 		(pin "5"
-			(uuid "f3e5f630-cf58-470a-8082-066aec4435b0")
+			(uuid "0b99ad0b-71cf-419d-ae1d-86d0056596f6")
 		)
 		(pin "6"
-			(uuid "31b10d4b-dfc1-4a4c-b9a5-338ac6364371")
+			(uuid "778bffa8-4c63-4fde-a45d-379b69f95b02")
 		)
 		(pin "7"
-			(uuid "cf721dad-6bf0-4912-8736-9907aeb7f245")
+			(uuid "b0642c14-a12f-4d5d-9b3a-a8ad24f3a986")
 		)
 		(pin "8"
-			(uuid "19020538-7f54-44b6-a22a-d32c33a88fe1")
+			(uuid "9d317d86-012f-41de-a8bd-52752a92dd74")
 		)
 		(pin "9"
-			(uuid "f6b05702-806d-4832-9c53-36f681315cc5")
+			(uuid "b29c8acd-cf80-4406-abd1-a2af26c09414")
 		)
 		(pin "10"
-			(uuid "c3521661-3441-4a35-b4c5-12906439b907")
+			(uuid "353d6c0c-aee0-4131-9805-c13f4ae99831")
 		)
 		(pin "11"
-			(uuid "a2b75830-cf97-43d4-9bc5-cc7885d278c0")
+			(uuid "3d597952-1fbd-44c4-be25-f95f8582062b")
 		)
 		(pin "12"
-			(uuid "5238e626-b99d-43c1-a3d1-073aa606efc4")
+			(uuid "71fa07db-1096-486d-a421-4158c4f746cb")
 		)
 		(pin "13"
-			(uuid "1e9fc22e-33c6-46c8-aae4-b4e3c77ac4e0")
+			(uuid "d35f8661-d49c-450c-b73c-9fa41d266341")
 		)
 		(pin "14"
-			(uuid "7587241a-d335-49a0-a07f-8b1f3d0c46f5")
+			(uuid "b86debcf-6e8f-4d6c-a412-395d55779b90")
 		)
 		(pin "15"
-			(uuid "79eea8eb-33de-4617-867c-734b083e2f94")
+			(uuid "183b13ae-bdb4-4c5f-9239-fd40bdf2fa2a")
 		)
 		(pin "16"
-			(uuid "063896f3-45cc-48f3-968b-23112fa574b3")
+			(uuid "f75aa426-7303-4366-b39c-4884fdcce9fa")
 		)
 		(pin "17"
-			(uuid "cf40ab05-38bc-40a6-b0c3-5102d45729b7")
+			(uuid "abf4b0ce-cb10-4f63-92a7-e96067600360")
 		)
 		(pin "18"
-			(uuid "545cc847-1971-460f-9fd6-49a7a1e89f2d")
+			(uuid "3104de9a-afe3-4247-981e-d732e7cd6cee")
 		)
 		(pin "19"
-			(uuid "91d111b5-0565-4d7d-8388-cc039e1951ab")
+			(uuid "c2d080d9-bbbb-47dd-8ef6-ed93155325df")
 		)
 		(pin "20"
-			(uuid "9ef3ae6e-9cda-465c-bc81-09850bba17b8")
+			(uuid "8e88e2d2-8f12-42b0-9259-5fc6a02a2ed1")
 		)
 		(instances
 			(project "xgzp6899"
