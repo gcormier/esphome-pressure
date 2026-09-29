@@ -1,0 +1,3 @@
+[submodule "pcb/lib/sensor_module"]
+	path = pcb/lib/sensor_module
+	url = https://github.com/gcormier/sensor_module
