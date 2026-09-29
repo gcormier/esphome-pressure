@@ -27,10 +27,11 @@ One vocabulary for every protocol, borrowed from SPI's COPI/CIPO:
   TX to it: the carrier's TX goes to `UART_C2P`, the module's TX goes to `UART_P2C`.
   Both sides use the same net names, so there is nothing to cross over.
 
-Every pin keeps the **direction the SFP MSA gives it** (host = carrier). Host-driven
-SFP pins (TD±, TX_DISABLE, RS0/1) carry C2P signals; module-driven ones (RD±,
-TX_FAULT, RX_LOS) carry P2C signals. Outputs never face outputs, even if a real SFP
-optic ends up in a carrier.
+Every signal pin keeps the **direction the SFP MSA gives it** (host = carrier).
+Host-driven SFP pins (TD±, TX_DISABLE, RS0) carry C2P signals; module-driven ones
+(RD−, TX_FAULT, RX_LOS) carry P2C signals. The one exception is +5V on pin 13 (RD+ in
+the MSA): don't plug a real SFP optic into a carrier, it would see 5 V there and on
+RS1.
 
 ## Pinout
 
@@ -40,7 +41,8 @@ lines up with the footprints.
 | Pin(s)                | Signal      | Dir   | SFP MSA name     | Notes                                          |
 |-----------------------|-------------|-------|------------------|------------------------------------------------|
 | 1, 10, 11, 14, 17, 20 | GND         | —     | VeeT / VeeR      |                                                |
-| 15, 16                | VDD         | C→P   | VccR / VccT      | 3.3 V from carrier; all logic is 3.3 V         |
+| 15, 16                | +3V3        | C→P   | VccR / VccT      | 3.3 V supply; all logic is 3.3 V               |
+| 9, 13                 | +5V         | C→P   | RS1 / RD+        | 5 V supply only, never a logic level           |
 | 4                     | SDA         | ↔     | MOD-DEF2 / SDA   | Pull-up on carrier                             |
 | 5                     | SCL         | C→P   | MOD-DEF1 / SCL   | Pull-up on carrier                             |
 | 18                    | SPI_SCK     | C→P   | TD+              |                                                |
@@ -51,8 +53,16 @@ lines up with the footprints.
 | 8                     | UART_P2C    | P→C   | RX_LOS           | Module TX → carrier RX; pull-up on carrier     |
 | 2                     | ~INT        | P→C   | TX_FAULT         | Open-drain, active low; pull-up on carrier     |
 | 6                     | MOD_ABS     | P→C   | MOD_ABS          | Module ties to GND; pull-up on carrier = absent |
-| 9                     | SPARE_C2P   | C→P   | RS1              | Reserved                                       |
-| 13                    | SPARE_P2C   | P→C   | RD+              | Reserved                                       |
+
+### Power
+
+- Each supply has two contacts. SFP contacts are typically rated about 0.5 A each
+  (check the HC-SFP-20P datasheet), so budget well under 1 A per rail.
+- Mating order (set by the staggered pad lengths on `SFP_Plug`): GND first, then +3V3
+  (15, 16), then +5V (9, 13) together with the signals. A module sees ground and
+  3.3 V before 5 V.
+- A module that needs only one rail leaves the other rail's pins unconnected.
+  Never tie +3V3 and +5V together on a module.
 
 ### Rules
 
@@ -60,7 +70,7 @@ lines up with the footprints.
   line idles in a defined state whatever module is (or isn't) plugged in.
 - **Module** connects only what it uses and leaves the rest unconnected. It never
   drives a C2P pin, and it drives CIPO only while ~SPI_CS is low.
-- The spares keep their direction when they get assigned (a C2P spare stays C2P).
+- 5 V parts on a module level-shift to 3.3 V before touching any interface signal.
 
 ## Mechanical
 
