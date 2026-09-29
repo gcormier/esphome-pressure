@@ -27,3 +27,6 @@ fp-info-cache
 *-backups*
 # KiBot CI output
 KiBotOutput/
+
+# KiCad lock files
+~*.lck
