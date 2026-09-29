@@ -52,7 +52,7 @@
 				)
 			)
 		)
-		(property "Description" "Sensor module interface (interface-v1): I2C, SPI, UART on an SFP 20-pin edge connector. Signals named from the carrier side: C2M = carrier to module, M2C = module to carrier. Footprint sensor_module:SFP_Plug on modules, sensor_module:SFP+ on carriers."
+		(property "Description" "Sensor module interface (interface-v1): I2C, SPI, UART on an SFP 20-pin edge connector. Signals named from the carrier side: Carrier = controller (C), module = peripheral (P); C2P = carrier to module, P2C = module to carrier. Footprint sensor_module:SFP_Plug on modules, sensor_module:SFP+ on carriers."
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -282,7 +282,7 @@
 			(pin bidirectional line
 				(at 17.78 5.08 180)
 				(length 2.54)
-				(name "UART_C2M"
+				(name "UART_C2P"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -300,7 +300,7 @@
 			(pin bidirectional line
 				(at 17.78 2.54 180)
 				(length 2.54)
-				(name "UART_M2C"
+				(name "UART_P2C"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -318,7 +318,7 @@
 			(pin bidirectional line
 				(at 17.78 -2.54 180)
 				(length 2.54)
-				(name "SPARE_C2M"
+				(name "SPARE_C2P"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -336,7 +336,7 @@
 			(pin bidirectional line
 				(at 17.78 -5.08 180)
 				(length 2.54)
-				(name "SPARE_M2C"
+				(name "SPARE_P2C"
 					(effects
 						(font
 							(size 1.27 1.27)

@@ -1479,7 +1479,7 @@
 					)
 				)
 			)
-			(property "Description" "Sensor module interface (interface-v1): I2C, SPI, UART on an SFP 20-pin edge connector. Signals named from the carrier side: C2M = carrier to module, M2C = module to carrier. Footprint sensor_module:SFP_Plug on modules, sensor_module:SFP+ on carriers."
+			(property "Description" "Sensor module interface (interface-v1): I2C, SPI, UART on an SFP 20-pin edge connector. Signals named from the carrier side: Carrier = controller (C), module = peripheral (P); C2P = carrier to module, P2C = module to carrier. Footprint sensor_module:SFP_Plug on modules, sensor_module:SFP+ on carriers."
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1709,7 +1709,7 @@
 				(pin bidirectional line
 					(at 17.78 5.08 180)
 					(length 2.54)
-					(name "UART_C2M"
+					(name "UART_C2P"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1727,7 +1727,7 @@
 				(pin bidirectional line
 					(at 17.78 2.54 180)
 					(length 2.54)
-					(name "UART_M2C"
+					(name "UART_P2C"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1745,7 +1745,7 @@
 				(pin bidirectional line
 					(at 17.78 -2.54 180)
 					(length 2.54)
-					(name "SPARE_C2M"
+					(name "SPARE_C2P"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1763,7 +1763,7 @@
 				(pin bidirectional line
 					(at 17.78 -5.08 180)
 					(length 2.54)
-					(name "SPARE_M2C"
+					(name "SPARE_P2C"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3090,7 +3090,7 @@
 			)
 		)
 	)
-	(text "SensorModule interface\nC2M = carrier to module\nM2C = module to carrier\nNot on board/BOM until adopted"
+	(text "SensorModule interface\nC = controller = carrier\nP = peripheral = module\nNot on board/BOM yet"
 		(exclude_from_sim no)
 		(at 162.56 36.83 0)
 		(effects
@@ -3099,7 +3099,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "96e52c20-35b6-481c-80f4-a4d120da5536")
+		(uuid "998a5c1e-be72-477c-8881-7b89f4f34de9")
 	)
 	(symbol
 		(lib_id "sensor_module:SensorModule")
@@ -3109,7 +3109,7 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "570ee361-8a91-453f-aa12-daad069ca1eb")
+		(uuid "04d5efb5-d13a-405c-ba7d-7ec1faca3c56")
 		(property "Reference" "J2"
 			(at 162.56 40.64 0)
 			(show_name no)
@@ -3154,7 +3154,7 @@
 				)
 			)
 		)
-		(property "Description" "Sensor module interface (interface-v1): I2C, SPI, UART on an SFP 20-pin edge connector. Signals named from the carrier side: C2M = carrier to module, M2C = module to carrier. Footprint sensor_module:SFP_Plug on modules, sensor_module:SFP+ on carriers."
+		(property "Description" "Sensor module interface (interface-v1): I2C, SPI, UART on an SFP 20-pin edge connector. Signals named from the carrier side: Carrier = controller (C), module = peripheral (P); C2P = carrier to module, P2C = module to carrier. Footprint sensor_module:SFP_Plug on modules, sensor_module:SFP+ on carriers."
 			(at 177.8 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -3166,64 +3166,64 @@
 			)
 		)
 		(pin "1"
-			(uuid "c7ac732c-e320-4da1-bcca-d08224b7fee9")
+			(uuid "97a0e4a2-ed69-4fa6-8570-0b3d25b9d4ad")
 		)
 		(pin "2"
-			(uuid "8cf6952d-7517-4ed0-8fb9-cf40e8968719")
+			(uuid "775fd17f-a50e-4580-9e5e-2d376b9f66de")
 		)
 		(pin "3"
-			(uuid "a97e5101-be54-4207-b317-257a30a1daef")
+			(uuid "66766d93-8899-4964-85c4-aed2ba9edb0a")
 		)
 		(pin "4"
-			(uuid "8aa5430a-5815-4ff7-b663-3797db9c4984")
+			(uuid "79e24cb9-81f4-4ac7-9b43-6b95f00eaf86")
 		)
 		(pin "5"
-			(uuid "1e938c93-3dfd-44a9-9e03-f845998155ba")
+			(uuid "0ba19a92-b27a-4dbe-a384-cc68392ef6b3")
 		)
 		(pin "6"
-			(uuid "32365d93-d466-4c67-865b-9ff2740ef9ec")
+			(uuid "358a8c48-48c4-464c-a41c-ccd5d16aee0b")
 		)
 		(pin "7"
-			(uuid "d676ef19-9afc-480c-b7df-a25d3bca62c2")
+			(uuid "4fb25898-87ba-4663-9bbf-e84ddea8c2e8")
 		)
 		(pin "8"
-			(uuid "3c1cff67-a5bc-4bca-9a15-a93193dc9bc1")
+			(uuid "76e3c2c6-cff2-4606-b4cd-eb9515d0c36f")
 		)
 		(pin "9"
-			(uuid "aa3eaa51-8277-4293-a7d2-7575005eeb93")
+			(uuid "f0ef50ab-f293-4b70-a34b-8cfe6c636e9f")
 		)
 		(pin "10"
-			(uuid "dbc807f7-e68b-4cd6-aad8-ac262e3bf272")
+			(uuid "a40cf25c-cbec-4bec-bd89-6bf0fa245352")
 		)
 		(pin "11"
-			(uuid "2ec98fb0-2b43-4863-9788-70a3f5ac85db")
+			(uuid "2b7263c4-195d-4a8b-829e-80da314064ec")
 		)
 		(pin "12"
-			(uuid "4c13d3e8-a16a-4f58-b564-7dd5dc52f628")
+			(uuid "408e1f2b-3dfa-4b8b-a185-b913aea5b298")
 		)
 		(pin "13"
-			(uuid "91394500-182d-4875-aa69-9d1e58b1990c")
+			(uuid "76cbae50-2834-445f-934a-89b36775ffde")
 		)
 		(pin "14"
-			(uuid "fa4867ea-719d-4ebb-97fd-9b4091d2bca8")
+			(uuid "60fcf509-6b9f-4c66-986a-78f93da4e231")
 		)
 		(pin "15"
-			(uuid "43982bef-1f51-4103-9b6f-3d20abf91dd8")
+			(uuid "18ec7a4f-3fd9-4212-a7c7-7df82278bd8d")
 		)
 		(pin "16"
-			(uuid "0f291081-e66b-4bf4-bd7d-e39fac06a45d")
+			(uuid "7410308e-1836-49aa-9fa5-0c5869b2e0fa")
 		)
 		(pin "17"
-			(uuid "64483855-f06e-459a-86f1-173278088246")
+			(uuid "29401f17-37d8-44a9-8cf5-3472d539b790")
 		)
 		(pin "18"
-			(uuid "a064590a-7b0c-4d9a-bf8f-1d8af7fc7764")
+			(uuid "3a32cf25-04e2-4e20-bc0d-d2cfc298327b")
 		)
 		(pin "19"
-			(uuid "c44f3d60-3676-4e87-bd48-86bd14989273")
+			(uuid "ad79ac3a-ab60-4500-b863-8e8c45d8ced1")
 		)
 		(pin "20"
-			(uuid "16bd5341-9e82-4106-b0ab-0fa9673a06b8")
+			(uuid "0097512b-c12d-4d19-8772-9412a2e413d3")
 		)
 		(instances
 			(project "sdp810"
