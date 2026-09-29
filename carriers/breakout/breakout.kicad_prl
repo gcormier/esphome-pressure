@@ -59,7 +59,7 @@
     "ssh_key": ""
   },
   "meta": {
-    "filename": "sensor_module_carrier.kicad_prl",
+    "filename": "breakout.kicad_prl",
     "version": 5
   },
   "net_inspector_panel": {

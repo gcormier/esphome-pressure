@@ -25,3 +25,5 @@ fp-info-cache
 *.xml
 *.csv
 *-backups*
+# KiBot CI output
+KiBotOutput/

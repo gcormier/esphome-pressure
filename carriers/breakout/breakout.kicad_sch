@@ -1409,7 +1409,7 @@
 			(uuid "9a221f0f-8b65-4feb-be59-f152b47bc2ee")
 		)
 		(instances
-			(project "sensor_module_carrier"
+			(project "breakout"
 				(path "/7e71481c-d42b-4efe-a14b-0ecbd3e61cce"
 					(reference "#PWR02")
 					(unit 1)
@@ -1541,7 +1541,7 @@
 			(uuid "89243ce7-9b72-4268-86fe-ba490469d971")
 		)
 		(instances
-			(project "sensor_module_carrier"
+			(project "breakout"
 				(path "/7e71481c-d42b-4efe-a14b-0ecbd3e61cce"
 					(reference "#PWR01")
 					(unit 1)
