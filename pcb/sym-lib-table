@@ -1,0 +1,4 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "pressure-symbols") (type "KiCad") (uri "${KIPRJMOD}/pressure-symbols.kicad_sym") (options "") (descr ""))
+)
