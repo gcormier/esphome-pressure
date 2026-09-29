@@ -33,6 +33,19 @@ Reserved for later: pin 6 (MOD_ABS) for module-present detect.
 - **Module PCB thickness: 1.0 mm.** The SFP receptacle is made for a 1.0 mm paddle
   card; 1.6 mm will not seat.
 - Edge fingers: hard gold, bevelled (chamfered) edge.
+- Width 20 mm. The SFP tongue and the H2 hole (M2, 2.925 mm from the tongue
+  shoulder, on the centreline) are identical on every module.
+
+### Lengths
+
+Like M.2, modules come in a few lengths. Length **L** is measured from the tongue
+shoulder to the far edge. The two far-end M2 holes sit at **L − 2.5 mm**, ±6 mm
+from the centreline. A carrier provides standoffs for every length it accepts.
+
+| Size | L       | End holes at | Modules    |
+|------|---------|--------------|------------|
+| L22  | 22.5 mm | 20 mm        | xgzp6899   |
+| L42  | 42.5 mm | 40 mm        | sdp810     |
 
 ## I²C addresses
 
