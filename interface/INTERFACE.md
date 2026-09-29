@@ -13,6 +13,10 @@ Current version: **interface-v1**
 | Carrier | HC-SFP-20P (SFP host receptacle)   | `sensor_module:SFP+`          |
 | Module  | SFP edge fingers (paddle card)     | `sensor_module:SFP_Plug`      |
 
+Schematic symbol for both sides: `sensor_module:SensorModule` (in
+`sensor_module.kicad_sym`). Only the used pins are visible; the rest are hidden
+no-connect pins so every pad still maps to a pin.
+
 ## Pinout
 
 Pin numbers follow the SFP MSA so the stock `Interface_Optical:SFP+` symbol and
