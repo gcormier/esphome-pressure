@@ -31,3 +31,5 @@ fp-info-cache
 pcb/3DxService.log
 secrets.yaml
 .esphome/*
+# KiBot CI output
+KiBotOutput/

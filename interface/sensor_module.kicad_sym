@@ -41,7 +41,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://github.com/gcormier/sensor_module/blob/main/interface/INTERFACE.md"
+		(property "Datasheet" "https://github.com/gcormier/esphome-pressure/blob/main/interface/INTERFACE.md"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)

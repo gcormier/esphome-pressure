@@ -1,5 +1,5 @@
 (sym_lib_table
 	(version 7)
 	(lib (name "pressure-symbols") (type "KiCad") (uri "${KIPRJMOD}/pressure-symbols.kicad_sym") (options "") (descr ""))
-	(lib (name "sensor_module") (type "KiCad") (uri "${KIPRJMOD}/lib/sensor_module/interface/sensor_module.kicad_sym") (options "") (descr ""))
+	(lib (name "sensor_module") (type "KiCad") (uri "${KIPRJMOD}/../interface/sensor_module.kicad_sym") (options "") (descr ""))
 )

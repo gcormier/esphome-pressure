@@ -2,16 +2,14 @@ name: "Fabrication"
 on:
   push:
     paths:
-      - '**.kicad_sch'
-      - '**.kicad_pcb'
-      - '**kibot.yaml'
+      - 'pcb/**'
+      - 'interface/**'
     tags:
       - pcb*
   pull_request:
     paths:
-      - '**.kicad_sch'
-      - '**.kicad_pcb'
-      - '**kibot.yaml'
+      - 'pcb/**'
+      - 'interface/**'
   workflow_dispatch:
   workflow_call:
 

@@ -83,3 +83,16 @@ If you want to change the sensor to an absolute pressure sensor, the XGZP6887D a
 you will need to set your K value according to the datasheet.
 
 Please see https://github.com/gcormier/esphome-pressure/discussions/12 for more discussion and leave a comment if you are using it successfully.
+## Sensor modules
+The sensor is moving onto plug-in modules that use an SFP connector, so one main board can take different sensors.
+The interface (pinout, I²C/SPI/UART, +3V3/+5V, module lengths) is specified in [interface/INTERFACE.md](interface/INTERFACE.md).
+
+```
+pcb/                  main board (the carrier)
+interface/            shared SensorModule symbol, SFP footprints, INTERFACE.md
+modules/<name>/       one KiCad project per sensor module (xgzp6899, sdp810)
+carriers/breakout/    bench carrier: SFP receptacle -> 4-pin header
+```
+
+Every project references `interface/` relatively, so nothing needs configuring in KiCad.
+The main board is released with `pcb-v<N>` tags; a module or carrier with `<project>-v<N>`, eg `sdp810-v1`.
