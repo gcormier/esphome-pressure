@@ -515,7 +515,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "xgzp6899.kicad_pro",
+    "filename": "hybrid.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -620,7 +620,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "hybrid.step",
       "svg": "",
       "vrml": ""
     },
@@ -771,8 +771,8 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "xgzp6899.kicad_sch",
-        "name": "xgzp6899",
+        "filename": "hybrid.kicad_sch",
+        "name": "hybrid",
         "uuid": "7e71481c-d42b-4efe-a14b-0ecbd3e61cce"
       }
     ],
@@ -782,7 +782,7 @@
   "sheets": [
     [
       "7e71481c-d42b-4efe-a14b-0ecbd3e61cce",
-      "xgzp6899"
+      "hybrid"
     ]
   ],
   "text_variables": {},

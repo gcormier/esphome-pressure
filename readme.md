@@ -90,9 +90,10 @@ The interface (pinout, I²C/SPI/UART, +3V3/+5V, module lengths) is specified in 
 ```
 pcb/                  main board (the carrier)
 interface/            shared SensorModule symbol, SFP footprints, INTERFACE.md
-modules/<name>/       one KiCad project per sensor module (xgzp6899, sdp810)
-carriers/breakout/    bench carrier: SFP receptacle -> 4-pin header
+modules/hybrid/       current module: fits an SDP810 or an XGZP6899D on one board
+modules/<name>/       older single-sensor modules (xgzp6899, sdp810), superseded by hybrid
+modules/skeleton/     blank L42 module to start new ones from (hole grid, keepouts)
 ```
 
 Every project references `interface/` relatively, so nothing needs configuring in KiCad.
-The main board is released with `pcb-v<N>` tags; a module or carrier with `<project>-v<N>`, eg `sdp810-v1`.
+The main board is released with `pcb-v<N>` tags; a module with `<project>-v<N>`, eg `hybrid-v1`.

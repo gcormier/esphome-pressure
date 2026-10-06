@@ -1,0 +1,8 @@
+(version 1)
+
+# U1 (SDP810) and U2 (XGZP6899D) are alternatives sharing one site; only one
+# is ever fitted, so their courtyards may overlap.
+(rule "alternate_sensor_site"
+	(constraint courtyard_clearance)
+	(severity ignore)
+	(condition "A.Reference == 'U?' && B.Reference == 'U?'"))

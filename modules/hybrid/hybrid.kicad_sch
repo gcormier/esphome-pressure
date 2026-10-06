@@ -5,10 +5,255 @@
 	(uuid "7e71481c-d42b-4efe-a14b-0ecbd3e61cce")
 	(paper "USLetter")
 	(title_block
-		(title "serialsentinel")
-		(date "2023-04-02")
+		(title "hybrid sensor module")
+		(date "2026-10-02")
 	)
 	(lib_symbols
+		(symbol "Connector_Generic:Conn_01x05"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x05"
+				(at 0 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Conn_01x05_1_1"
+				(rectangle
+					(start -1.27 6.35)
+					(end 1.27 -6.35)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 5.207)
+					(end 0 4.953)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -4.953)
+					(end 0 -5.207)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 5.08 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -5.08 0)
+					(length 3.81)
+					(name "Pin_5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -767,6 +1012,121 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:PWR_FLAG"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "sdp810:SDP810"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1407,6 +1767,17 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Pogo test pads (module bottom)"
+		(exclude_from_sim no)
+		(at 165.1 105.41 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "627bac95-7bb6-4b63-8d71-a5c39cd9e5f8")
+	)
 	(text "Use 2.5mm or 3.0mm high round nut on host board\nSMTSOM225BTR\nSMTSOM230BTR"
 		(exclude_from_sim no)
 		(at 118.745 92.71 0)
@@ -1417,6 +1788,17 @@
 			(justify left bottom)
 		)
 		(uuid "895864d4-7bef-4d7e-aea6-f1c941093e8b")
+	)
+	(text "Fit U1 (SDP810) OR U2 (XGZP6899D), never both:\nthe footprints overlap on the PCB.\nI2C: SDP810 0x25, XGZP6899D 0x6D"
+		(exclude_from_sim no)
+		(at 99.06 118.11 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d6b7773f-1110-43bd-b82a-a5cab936f6eb")
 	)
 	(no_connect
 		(at 124.46 52.07)
@@ -1450,6 +1832,89 @@
 		(at 160.02 49.53)
 		(uuid "d2ac03d2-9fe5-48bd-b9c8-f9d1cd569f04")
 	)
+	(wire
+		(pts
+			(xy 55.88 50.8) (xy 40.64 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02b5ef61-c771-4b9c-accc-7e76dd5b3ce1")
+	)
+	(wire
+		(pts
+			(xy 160.02 44.45) (xy 165.1 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07fb5cc6-79bf-466c-9bd2-cb01129cad67")
+	)
+	(wire
+		(pts
+			(xy 55.88 58.42) (xy 40.64 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24cd1599-7443-47aa-be76-5cc6f1ef5cb1")
+	)
+	(wire
+		(pts
+			(xy 166.37 110.49) (xy 175.26 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7081469c-8f93-48d7-b747-7d7ce2224afa")
+	)
+	(wire
+		(pts
+			(xy 165.1 44.45) (xy 165.1 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aef22367-1aad-4152-acf3-e2fe609bf137")
+	)
+	(wire
+		(pts
+			(xy 160.02 115.57) (xy 175.26 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bbcde9b2-120b-46c8-b72d-3d279eb917d3")
+	)
+	(global_label "SDA"
+		(shape input)
+		(at 175.26 118.11 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "15b6f624-c2f8-4b6d-a74e-498acb2cf84c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 168.76 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
 	(global_label "SDA"
 		(shape input)
 		(at 88.9 54.61 0)
@@ -1475,6 +1940,29 @@
 	)
 	(global_label "SCL"
 		(shape input)
+		(at 175.26 113.03 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "537caf63-05f7-4d80-8fbc-d15b4bd73b49")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 168.76 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "SCL"
+		(shape input)
 		(at 124.46 44.45 180)
 		(effects
 			(font
@@ -1493,6 +1981,30 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+	)
+	(global_label "SDA"
+		(shape input)
+		(at 88.9 118.11 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b54a8bb8-4f6b-4170-8f09-32a563226f87")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 95.4533 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 	)
@@ -1539,6 +2051,30 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+	)
+	(global_label "SCL"
+		(shape input)
+		(at 88.9 115.57 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "fa565592-4f08-461e-a740-17e67a30e1b2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 95.3928 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 	)
@@ -1622,7 +2158,7 @@
 			(uuid "a3471df1-9dbd-4337-a504-536d2a0e240e")
 		)
 		(instances
-			(project "sdp810"
+			(project "hybrid"
 				(path "/7e71481c-d42b-4efe-a14b-0ecbd3e61cce"
 					(reference "U1")
 					(unit 1)
@@ -1639,7 +2175,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "18ca82d9-e14e-466d-9ca4-51185d93a772")
 		(property "Reference" "C1"
 			(at 56.515 52.07 0)
@@ -1696,6 +2232,17 @@
 				)
 			)
 		)
+		(property "LCSC" ""
+			(at 55.88 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "97d467c8-229c-4ceb-b94d-5876fcaaa17c")
 		)
@@ -1703,7 +2250,7 @@
 			(uuid "b390815e-1141-467f-9d06-1b7579fb102f")
 		)
 		(instances
-			(project "sdp810"
+			(project "hybrid"
 				(path "/7e71481c-d42b-4efe-a14b-0ecbd3e61cce"
 					(reference "C1")
 					(unit 1)
@@ -1778,9 +2325,109 @@
 			)
 		)
 		(instances
-			(project "sdp810"
+			(project "hybrid"
 				(path "/7e71481c-d42b-4efe-a14b-0ecbd3e61cce"
 					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Sensor_Pressure:XGZP6899D")
+		(at 81.28 118.11 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4323c826-ef88-441e-9954-65dd4ee86273")
+		(property "Reference" "U2"
+			(at 74.93 116.8399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "XGZP6899D"
+			(at 74.93 119.3799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Sensor_Pressure:CFSensor_XGZP6899x"
+			(at 81.28 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://cfsensor.com/wp-content/uploads/2022/11/XGZP6899D-Pressure-Sensor-V2.8.pdf"
+			(at 81.28 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "i2c differential digital, 2.5Vdc-5.5Vdc"
+			(at 81.28 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ecbc5acf-ca6b-4ef3-81f5-705ebccd2f48")
+		)
+		(pin "7"
+			(uuid "14e6f4b6-cb0f-4495-886f-ab701fdb600b")
+		)
+		(pin "8"
+			(uuid "eec29105-0374-462b-b60e-7e2f6e492b13")
+		)
+		(pin "2"
+			(uuid "b83b5518-30d7-4cce-8ee1-8ab98b02e3d0")
+		)
+		(pin "3"
+			(uuid "e1e2c347-b906-4a84-9ffc-4980a7b78e33")
+		)
+		(pin "6"
+			(uuid "b056414e-7d0e-4fcd-8a69-67b590789b06")
+		)
+		(pin "5"
+			(uuid "51e37151-c735-4e08-8c88-bd9d8b4908d8")
+		)
+		(pin "4"
+			(uuid "d9335f38-d632-4bc1-a0c3-a4569f876487")
+		)
+		(instances
+			(project "hybrid"
+				(path "/7e71481c-d42b-4efe-a14b-0ecbd3e61cce"
+					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -1856,9 +2503,99 @@
 			(uuid "1167022e-ba26-456e-bdac-df6fc5e117aa")
 		)
 		(instances
-			(project "sdp810"
+			(project "hybrid"
 				(path "/7e71481c-d42b-4efe-a14b-0ecbd3e61cce"
 					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x05")
+		(at 180.34 115.57 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "4bfe279f-035d-4134-b9be-863f867a493a")
+		(property "Reference" "J2"
+			(at 182.88 114.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Pogo test pads"
+			(at 182.88 116.84 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "sensor_module:TestPads_1x05_P2.54mm"
+			(at 180.34 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 180.34 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Bottom-side pogo-pin test pads, 2.54 mm pitch: GND, SCL, +3V3, SDA, GND (reversal-safe)"
+			(at 180.34 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5a8103e0-34f3-4cda-a849-6b76ceac1552")
+		)
+		(pin "2"
+			(uuid "6c4c5f9a-69e2-4088-9001-d087d50f27dc")
+		)
+		(pin "3"
+			(uuid "f89dc7db-3769-4f65-95cc-cef687857242")
+		)
+		(pin "4"
+			(uuid "7a5e63f4-b2ba-4477-a29c-6835bf8552b0")
+		)
+		(pin "5"
+			(uuid "511f54bb-ebf6-42d0-8aa0-55459126bab3")
+		)
+		(instances
+			(project "hybrid"
+				(path "/7e71481c-d42b-4efe-a14b-0ecbd3e61cce"
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -1933,7 +2670,7 @@
 			(uuid "e4b0e354-22ba-413b-841b-c4e28c92d5a8")
 		)
 		(instances
-			(project "sdp810"
+			(project "hybrid"
 				(path "/7e71481c-d42b-4efe-a14b-0ecbd3e61cce"
 					(reference "#PWR008")
 					(unit 1)
@@ -2010,9 +2747,86 @@
 			(uuid "fc8d24cb-7d64-45e7-94fe-df7be094f08a")
 		)
 		(instances
-			(project "sdp810"
+			(project "hybrid"
 				(path "/7e71481c-d42b-4efe-a14b-0ecbd3e61cce"
 					(reference "#PWR007")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 166.37 110.49 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8b2d0230-de60-44da-b33d-cf74092b1f74")
+		(property "Reference" "#PWR013"
+			(at 166.37 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 166.37 116.84 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 166.37 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 166.37 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 166.37 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "561cb8c7-f22f-4d35-8fab-8e20e49b42f4")
+		)
+		(instances
+			(project "hybrid"
+				(path "/7e71481c-d42b-4efe-a14b-0ecbd3e61cce"
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -2146,9 +2960,321 @@
 			(uuid "151e3a07-3631-4cb0-9957-15f8d738f52a")
 		)
 		(instances
-			(project "sdp810"
+			(project "hybrid"
 				(path "/7e71481c-d42b-4efe-a14b-0ecbd3e61cce"
 					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 81.28 128.27 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9c6fc1d2-449f-4a5b-9c12-32a561c6dd5c")
+		(property "Reference" "#PWR011"
+			(at 81.28 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 81.28 133.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 81.28 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 81.28 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3e3cc6d0-c9bb-4bd9-8f00-a83626029545")
+		)
+		(instances
+			(project "hybrid"
+				(path "/7e71481c-d42b-4efe-a14b-0ecbd3e61cce"
+					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 40.64 50.8 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a77ccff5-0d59-445f-95a9-98478be92758")
+		(property "Reference" "#FLG01"
+			(at 40.64 52.705 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 40.64 46.99 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 40.64 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 40.64 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 40.64 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "02dc3dab-b78b-48e6-a4c8-2d0cae5b0bb0")
+		)
+		(instances
+			(project "hybrid"
+				(path "/7e71481c-d42b-4efe-a14b-0ecbd3e61cce"
+					(reference "#FLG01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 175.26 120.65 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b25e4bd3-b68c-4542-8b48-77d71db09761")
+		(property "Reference" "#PWR014"
+			(at 175.26 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 172.72 121.9199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 175.26 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 175.26 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 175.26 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "259b6463-d6ac-4b17-9ce1-0d6a3a29ff5d")
+		)
+		(instances
+			(project "hybrid"
+				(path "/7e71481c-d42b-4efe-a14b-0ecbd3e61cce"
+					(reference "#PWR014")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 165.1 46.99 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c0d1bb4b-d827-4b15-b639-861ad3a74e84")
+		(property "Reference" "#PWR09"
+			(at 165.1 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 165.1 50.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 165.1 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 165.1 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 165.1 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1577336b-5a98-42e5-b430-c4f08a7f9b67")
+		)
+		(instances
+			(project "hybrid"
+				(path "/7e71481c-d42b-4efe-a14b-0ecbd3e61cce"
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -2224,9 +3350,243 @@
 			(uuid "b0052d1b-2e09-4b17-afe4-c24d935951b1")
 		)
 		(instances
-			(project "sdp810"
+			(project "hybrid"
 				(path "/7e71481c-d42b-4efe-a14b-0ecbd3e61cce"
 					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 81.28 107.95 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c53825d9-191a-42b1-8da0-b59d883d9136")
+		(property "Reference" "#PWR010"
+			(at 81.28 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 81.28 102.87 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 81.28 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 81.28 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "11103960-1f87-4fd7-a541-54777c288244")
+		)
+		(instances
+			(project "hybrid"
+				(path "/7e71481c-d42b-4efe-a14b-0ecbd3e61cce"
+					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 160.02 115.57 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d2360190-bb07-4b8d-bbae-aa2af48b5bab")
+		(property "Reference" "#PWR012"
+			(at 160.02 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 160.02 110.49 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 160.02 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 160.02 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 160.02 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "28a47db9-dc26-4de1-9e00-c2f9ee718995")
+		)
+		(instances
+			(project "hybrid"
+				(path "/7e71481c-d42b-4efe-a14b-0ecbd3e61cce"
+					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 40.64 58.42 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "da76a7df-e909-475d-95c5-f0d5d0296329")
+		(property "Reference" "#FLG02"
+			(at 40.64 56.515 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 40.64 62.23 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 40.64 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 40.64 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 40.64 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "85317a68-1e5b-4551-8fa2-ea66afd72b01")
+		)
+		(instances
+			(project "hybrid"
+				(path "/7e71481c-d42b-4efe-a14b-0ecbd3e61cce"
+					(reference "#FLG02")
 					(unit 1)
 				)
 			)
@@ -2302,7 +3662,7 @@
 			(uuid "cb0643fa-7957-4ea9-ac98-221a99b13407")
 		)
 		(instances
-			(project "sdp810"
+			(project "hybrid"
 				(path "/7e71481c-d42b-4efe-a14b-0ecbd3e61cce"
 					(reference "#PWR03")
 					(unit 1)
@@ -2380,7 +3740,7 @@
 			(uuid "f11439e7-6359-4ca6-a9ee-9f66286b4203")
 		)
 		(instances
-			(project "sdp810"
+			(project "hybrid"
 				(path "/7e71481c-d42b-4efe-a14b-0ecbd3e61cce"
 					(reference "#PWR05")
 					(unit 1)
@@ -2475,96 +3835,9 @@
 			)
 		)
 		(instances
-			(project "sdp810"
+			(project "hybrid"
 				(path "/7e71481c-d42b-4efe-a14b-0ecbd3e61cce"
 					(reference "H1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 160.02 44.45) (xy 165.1 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "07fb5cc6-79bf-466c-9bd2-cb01129cad67")
-	)
-	(wire
-		(pts
-			(xy 165.1 44.45) (xy 165.1 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aef22367-1aad-4152-acf3-e2fe609bf137")
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 165.1 46.99 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "c0d1bb4b-d827-4b15-b639-861ad3a74e84")
-		(property "Reference" "#PWR09"
-			(at 165.1 53.34 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 165.1 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 165.1 46.99 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 165.1 46.99 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 165.1 46.99 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1577336b-5a98-42e5-b430-c4f08a7f9b67")
-		)
-		(instances
-			(project "sdp810"
-				(path "/7e71481c-d42b-4efe-a14b-0ecbd3e61cce"
-					(reference "#PWR09")
 					(unit 1)
 				)
 			)

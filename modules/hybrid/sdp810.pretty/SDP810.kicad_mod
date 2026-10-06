@@ -1,0 +1,236 @@
+(footprint "SDP810"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Sensirion SDP8xx differential pressure sensor, THT, 4 pins, 2mm pitch, optional M2 mounting screw holes, https://sensirion.com/media/documents/90500156/6167E43B/Sensirion_Differential_Pressure_Datasheet_SDP8xx_Digital.pdf")
+	(tags "Sensirion SDP810 SDP811 SDP800 differential pressure sensor")
+	(property "Reference" "REF**"
+		(at 0 -10.2 0)
+		(layer "F.SilkS")
+		(uuid "6d073fe6-74a7-490d-b329-df37738eece6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "SDP810"
+		(at 0 10.2 0)
+		(layer "F.Fab")
+		(uuid "e12bd91b-12a0-498c-be74-0817d4a5ade9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://sensirion.com/media/documents/90500156/6167E43B/Sensirion_Differential_Pressure_Datasheet_SDP8xx_Digital.pdf"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "880e96b4-0003-45fa-b959-6536fdd2aecf")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Sensirion SDP8xx differential pressure sensor, I2C"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "68e935cf-9807-47a9-9cc6-cc4a40fcbc41")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -14.61 -9.11)
+		(end 14.61 9.11)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "10242efd-045b-4ea2-b298-5c445b6e05e8")
+	)
+	(fp_poly
+		(pts
+			(xy -3 4.4) (xy -3.4 4.9) (xy -2.6 4.9)
+		)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "f7806cda-18c3-45c5-b4ec-16429e5676d5")
+	)
+	(fp_rect
+		(start -14.75 -9.25)
+		(end 14.75 9.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "a1bf86fe-f9ac-4840-ae5a-153efc004b4c")
+	)
+	(fp_circle
+		(center -6.3 -4.5)
+		(end -4.55 -4.5)
+		(stroke
+			(width 0.1)
+			(type dash_dot)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "f17d28ac-5f03-4960-bfb2-5d22bccbecfd")
+	)
+	(fp_circle
+		(center 6.3 -4.5)
+		(end 8.05 -4.5)
+		(stroke
+			(width 0.1)
+			(type dash_dot)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "3c68093b-fe18-4446-a31f-f351ea4d6bc7")
+	)
+	(fp_poly
+		(pts
+			(xy -14.5 -9) (xy 14.5 -9) (xy 14.5 9) (xy -13.5 9) (xy -14.5 8)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "0f72e329-dfc2-47ff-ba61-d2d5f2f2350c")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "6ea5736d-c7a5-41ab-be7d-7c179f0f5a05")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "" np_thru_hole circle
+		(at -12 0)
+		(size 2.2 2.2)
+		(drill 2.2)
+		(layers "*.Cu" "*.Mask")
+		(uuid "e8c9489e-09b5-4b57-927e-f125dac7d20d")
+	)
+	(pad "" np_thru_hole circle
+		(at -11.3 3)
+		(size 0.8 0.8)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(uuid "86571c35-1c3b-4706-ba7f-32cfc78830dd")
+	)
+	(pad "" np_thru_hole circle
+		(at -11.1 -4.45)
+		(size 2 2)
+		(drill 2)
+		(layers "*.Cu" "*.Mask")
+		(uuid "03f51212-f68b-4674-a0bd-61e68b61724c")
+	)
+	(pad "" np_thru_hole circle
+		(at -11.1 5.95)
+		(size 2 2)
+		(drill 2)
+		(layers "*.Cu" "*.Mask")
+		(uuid "3e56eae9-25d6-4203-92ce-eb55c5d4f7ad")
+	)
+	(pad "" np_thru_hole circle
+		(at 11.1 -5.95)
+		(size 2 2)
+		(drill 2)
+		(layers "*.Cu" "*.Mask")
+		(uuid "66ffcf65-fa2f-4a24-9315-c8e6da56cdfa")
+	)
+	(pad "" np_thru_hole circle
+		(at 11.1 5.95)
+		(size 2 2)
+		(drill 2)
+		(layers "*.Cu" "*.Mask")
+		(uuid "215e3466-9118-4dbc-8110-af722b0e6b67")
+	)
+	(pad "" np_thru_hole circle
+		(at 11.3 -3)
+		(size 0.8 0.8)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(uuid "2126d189-a4eb-46d3-befe-4a1ec76888c3")
+	)
+	(pad "" np_thru_hole circle
+		(at 12 0)
+		(size 2.2 2.2)
+		(drill 2.2)
+		(layers "*.Cu" "*.Mask")
+		(uuid "edc0b7b7-65e3-4503-9152-202c578237f2")
+	)
+	(pad "1" thru_hole roundrect
+		(at -3 2.75)
+		(size 1.5 1.5)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.166667)
+		(uuid "e2894dff-a86b-4ae7-8ecf-5890b4d69217")
+	)
+	(pad "2" thru_hole circle
+		(at -1 2.75)
+		(size 1.5 1.5)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "01c9adcd-e44f-4423-8bdd-248a5ae70819")
+	)
+	(pad "3" thru_hole circle
+		(at 1 2.75)
+		(size 1.5 1.5)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "e8c76cb3-0d08-4f52-a8e1-60c5260de37e")
+	)
+	(pad "4" thru_hole circle
+		(at 3 2.75)
+		(size 1.5 1.5)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "6c5d1069-ac7d-40cc-8705-c0567d9af5f1")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/SDP810.step"
+		(offset
+			(xyz 0 0 10.25)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 90 0 0)
+		)
+	)
+)

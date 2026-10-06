@@ -1,10 +1,11 @@
 # Sensor module interface
 
-The contract between a **carrier** (esphome-pressure, the breakout board, …) and a
-**module** (xgzp6899, sdp810, …). Anything listed here must match on both sides;
+The contract between a **carrier** (the esphome-pressure main board) and a
+**module** (hybrid, …). Anything listed here must match on both sides;
 change it only with a new `interface-vN` tag.
 
-Current version: **interface-v1**
+Current version: **interface-v3** (v2: 10 mm centreline hole grid, M2 SMT nuts on carriers;
+v3: SDP810 screw nuts at 10 and 34 mm replace the 30 mm nut)
 
 ## Connector
 
@@ -80,16 +81,52 @@ lines up with the footprints.
 - Width 20 mm. The SFP tongue and the H2 hole (M2, 2.925 mm from the tongue
   shoulder, on the centreline) are identical on every module.
 
-### Lengths
+### Lengths and hole grid
 
-Like M.2, modules come in a few lengths. Length **L** is measured from the tongue
-shoulder to the far edge. The two far-end M2 holes sit at **L − 2.5 mm**, ±6 mm
-from the centreline. A carrier provides standoffs for every length it accepts.
+Like M.2, modules come in a few lengths on a 10 mm grid. All positions are measured
+from the tongue shoulder, on the centreline.
 
-| Size | L       | End holes at | Modules    |
-|------|---------|--------------|------------|
-| L22  | 22.5 mm | 20 mm        | xgzp6899   |
-| L42  | 42.5 mm | 40 mm        | sdp810     |
+- Length **L = 10k + 2.5 mm**, shoulder to far edge.
+- One M2 end hole (2.2 mm, NPTH) at **L − 2.5 mm** on the centreline, plus H2.
+- **Bottom keepout:** at every carrier nut position short of its own end hole (10 and
+  34 mm, see Carrier standoffs), a module keeps a Ø6 mm area on B.Cu/B side free of
+  parts, pads and vias (tracks and pours under solder mask are fine). The carrier's
+  nuts there act as rests.
+- **SDP810 screws:** the SDP810 has Ø2.9 mm vertical bores through its body, 24 mm
+  apart (datasheet "holes for additional mounting screws"). Its clips don't grip a
+  1.0 mm card, so a module carrying one (hybrid) centres it at 22 mm and puts Ø2.2 mm
+  NPTH holes at 10 and 34 mm. An **M2×14** screw (pan or socket head, with a washer)
+  goes through the sensor body (10.25 mm) and the module (1.0 mm) into the carrier's
+  2.5 mm nut. Measure the real body height before buying screws.
+- Keep top-side parts clear of the end hole's M2 screw head (MountingHole_2.2mm_M2
+  courtyard). With H2, that leaves about 5.4 mm to L − 5 mm on the centreline for parts.
+- Start a new module from [modules/skeleton](../modules/skeleton): an L42 board with
+  J1, H2, H1, GND pours, and the keepouts drawn as B.Cu rule areas. Dwgs.User marks
+  where the L22/L32 edges and end holes go. For a shorter module, move the edge and H1,
+  and delete the keepouts at or past H1.
+
+| Size | L       | End hole at | Modules    |
+|------|---------|-------------|------------|
+| L22  | 22.5 mm | 20 mm       |            |
+| L32  | 32.5 mm | 30 mm       | xgzp6899 (superseded; no carrier has a 30 mm nut since v3) |
+| L42  | 42.5 mm | 40 mm       | hybrid; sdp810 (superseded) |
+
+### Carrier standoffs
+
+- A carrier fits an **M2 SMT round nut, 2.5 mm high** (SMTSOM225BTR, LCSC C5301773)
+  at H2 and at the end-hole position of every size it accepts. Nuts at other grid
+  positions are optional rests.
+- Carriers today: the main board has nuts at 2.925, 10, 34 and 40 mm (L42 only). 10 and
+  34 mm take the SDP810 screws; there is no 20 mm nut (SDP810 leads) and no 30 mm nut
+  (it would overlap the 34 mm one).
+- 2.5 mm matches the HC-SFP-20P, where the 1.0 mm card's bottom face sits about
+  2.6 mm above the host board (from the connector's STEP model). Don't use the
+  3.0 mm version: it would bend the card up against the contacts.
+- Footprint: `Mounting_Wuerth:Mounting_Wuerth_WA-SMSI-M2_H2.5mm_9774025243` (Ø4.35
+  body, 3 mm locating hole, Ø5.8 courtyard) until it has been checked against the
+  SMTSOM225BTR drawing. The pad goes to GND.
+- Keep carrier parts under the module shadow lower than 2.5 mm, and keep screw heads
+  (for example enclosure mounting screws) out of it.
 
 ## I²C addresses
 
@@ -97,3 +134,4 @@ from the centreline. A carrier provides standoffs for every length it accepts.
 |-----------|---------------|---------|
 | xgzp6899  | XGZP6899D     | 0x6D    |
 | sdp810    | Sensirion SDP810 | 0x25 |
+| hybrid    | SDP810 or XGZP6899D (one fitted) | 0x25 or 0x6D |

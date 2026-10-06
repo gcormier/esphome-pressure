@@ -1,18 +1,16 @@
 name: "Fabrication - modules"
-# One job per KiCad project under modules/ and carriers/.
-# Release a single board by tagging <project>-v<N>, eg xgzp6899-v1 or breakout-v2.
+# One job per KiCad project under modules/ (the skeleton template is skipped).
+# Release a single board by tagging <project>-v<N>, eg hybrid-v1.
 on:
   push:
     paths:
       - 'modules/**'
-      - 'carriers/**'
       - 'interface/**'
     tags:
       - '*-v*'
   pull_request:
     paths:
       - 'modules/**'
-      - 'carriers/**'
       - 'interface/**'
   workflow_dispatch:
 
@@ -25,7 +23,7 @@ jobs:
       - uses: actions/checkout@v4
       - id: find
         run: |
-          boards=$(find modules carriers -name '*.kicad_pro' | sort | jq -R -s -c '
+          boards=$(find modules -name '*.kicad_pro' -not -path 'modules/skeleton/*' | sort | jq -R -s -c '
             split("\n")[:-1] | map(split("/") | {dir: (.[:-1] | join("/")), name: (.[-1] | rtrimstr(".kicad_pro"))})')
           if [[ "${GITHUB_REF}" == refs/tags/* ]]; then
             board="${GITHUB_REF_NAME%-v*}"

@@ -33,3 +33,5 @@ secrets.yaml
 .esphome/*
 # KiBot CI output
 KiBotOutput/
+# KiCad local history
+.history/
