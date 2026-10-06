@@ -35,3 +35,5 @@ secrets.yaml
 KiBotOutput/
 # KiCad local history
 .history/
+# Claude Code project notes (kept local)
+CLAUDE.md
