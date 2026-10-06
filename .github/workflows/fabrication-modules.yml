@@ -16,11 +16,11 @@ on:
 
 jobs:
   boards:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     outputs:
       matrix: ${{ steps.find.outputs.matrix }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - id: find
         run: |
           boards=$(find modules -name '*.kicad_pro' -not -path 'modules/skeleton/*' | sort | jq -R -s -c '
