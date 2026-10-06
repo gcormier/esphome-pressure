@@ -90,8 +90,7 @@ The interface (pinout, I²C/SPI/UART, +3V3/+5V, module lengths) is specified in 
 ```
 pcb/                  main board (the carrier)
 interface/            shared SensorModule symbol, SFP footprints, INTERFACE.md
-modules/hybrid/       current module: fits an SDP810 or an XGZP6899D on one board
-modules/<name>/       older single-sensor modules (xgzp6899, sdp810), superseded by hybrid
+modules/hybrid/       sensor module: fits an SDP810 or an XGZP6899D on one board
 modules/skeleton/     blank L42 module to start new ones from (hole grid, keepouts)
 ```
 

@@ -108,8 +108,8 @@ from the tongue shoulder, on the centreline.
 | Size | L       | End hole at | Modules    |
 |------|---------|-------------|------------|
 | L22  | 22.5 mm | 20 mm       |            |
-| L32  | 32.5 mm | 30 mm       | xgzp6899 (superseded; no carrier has a 30 mm nut since v3) |
-| L42  | 42.5 mm | 40 mm       | hybrid; sdp810 (superseded) |
+| L32  | 32.5 mm | 30 mm       | (no carrier has a 30 mm nut since v3) |
+| L42  | 42.5 mm | 40 mm       | hybrid     |
 
 ### Carrier standoffs
 
@@ -132,6 +132,4 @@ from the tongue shoulder, on the centreline.
 
 | Module    | Sensor        | Address |
 |-----------|---------------|---------|
-| xgzp6899  | XGZP6899D     | 0x6D    |
-| sdp810    | Sensirion SDP810 | 0x25 |
 | hybrid    | SDP810 or XGZP6899D (one fitted) | 0x25 or 0x6D |
