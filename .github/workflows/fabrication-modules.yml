@@ -1,0 +1,48 @@
+name: "Fabrication - modules"
+# One job per KiCad project under modules/ (the skeleton template is skipped).
+# Release a single board by tagging <project>-v<N>, eg hybrid-v1.
+on:
+  push:
+    paths:
+      - 'modules/**'
+      - 'interface/**'
+    tags:
+      - '*-v*'
+  pull_request:
+    paths:
+      - 'modules/**'
+      - 'interface/**'
+  workflow_dispatch:
+
+jobs:
+  boards:
+    runs-on: ubuntu-24.04
+    outputs:
+      matrix: ${{ steps.find.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v7
+      - id: find
+        run: |
+          boards=$(find modules -name '*.kicad_pro' -not -path 'modules/skeleton/*' | sort | jq -R -s -c '
+            split("\n")[:-1] | map(split("/") | {dir: (.[:-1] | join("/")), name: (.[-1] | rtrimstr(".kicad_pro"))})')
+          if [[ "${GITHUB_REF}" == refs/tags/* ]]; then
+            board="${GITHUB_REF_NAME%-v*}"
+            boards=$(echo "$boards" | jq -c --arg b "$board" 'map(select(.name == $b))')
+          fi
+          echo "matrix=$boards" >> "$GITHUB_OUTPUT"
+          echo "$boards"
+
+  fabrication:
+    needs: boards
+    if: needs.boards.outputs.matrix != '[]'
+    strategy:
+      fail-fast: false
+      matrix:
+        board: ${{ fromJSON(needs.boards.outputs.matrix) }}
+    uses: gcormier/kicad-jobs/.github/workflows/kicad-fabrication.yaml@main
+    with:
+      project_dir: ${{ matrix.board.dir }}
+      project_name: ${{ matrix.board.name }}
+      release_tag_prefix: ${{ matrix.board.name }}-v
+    permissions:
+      contents: write
