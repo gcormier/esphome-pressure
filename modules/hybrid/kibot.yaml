@@ -65,7 +65,9 @@ outputs:
   - name: ZipOutputs
     comment: ZIP file for JLCPCB
     type: compress
-    dir: ./
+    # Not at the top level: kicad-jobs attaches top-level *.zip to releases, and
+    # fab files stay in the Actions artifacts only.
+    dir: JLCPCB
     options:
       output: '%f-gerbers.zip'
       files:
